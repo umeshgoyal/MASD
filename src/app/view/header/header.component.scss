@@ -1,0 +1,180 @@
+#topBar{
+    p{
+        width: fit-content;
+    }
+    .social:hover{
+        color: rgb(47, 140, 177);
+    }
+    #university:hover{
+        color: rgb(47, 140, 177);
+    }
+}
+
+#info-header{
+    margin-top: 35px;
+    .fas{
+        font-size: 30px;
+    }
+    #mail{
+        display: inline-block;
+        padding-top: 1rem;
+        font-size: 16px;
+        
+    }
+    #school{
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 120px;
+        display: inline-block;
+        img{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin-right: 8px;
+        }
+        p{
+            display: inline-block;
+        }
+    }
+    #contact{
+        font-size: 16px;
+        margin-left: 200px;
+        display: inline-block;
+        span{
+            margin-right: 8px;
+            display: inline;
+        }
+        p{
+            display: inline;
+        }
+    }
+}
+#menu-header{
+    a{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    a:hover{
+        color: red;
+    }
+    .dropdown:hover>.dropdown-menu{
+        display: block;
+    }
+}
+
+@media(max-width:380px){
+    #topBar{
+        #school{
+            width: 100%;
+        }
+        #social-media{
+            padding-right: 50px !important;
+        }
+        p{
+            padding-right: 40px !important  ;
+        }
+    }
+    #info-header{
+        .fas{
+            font-size: 20px;
+        }
+        
+        min-width: 26rem;
+        margin-top: 50px !important;
+        #mail{
+            font-size: 14px !important;
+        }
+        #school{
+            font-size: 14px !important;
+            margin-left: 75px;
+        }
+        #contact{
+            font-size: 14px !important;
+            margin-left: 60px;
+        }
+    }
+    #menu-header{
+        min-width: 26rem !important;;
+    }
+}
+@media(max-width:320px){
+    #topBar{
+        #school{
+            width: 100%;
+        }
+        #social-media{
+            margin-right: 40px !important;
+        }
+        p{
+            padding-right: 60px !important;
+        }    
+    }
+    #info-header{
+
+        padding-top: 15px;
+        .fas{
+            font-size: 20px;
+        }
+        #mail{
+            font-size: 14px !important;
+        }
+        #school{
+            font-size: 14px !important;
+        }
+        #contact{
+            font-size: 14px !important;
+        }
+    }
+    #menu-header{
+        min-width: 26rem !important;
+    }
+}
+
+@media(max-width:420px){
+    #info-header{
+        margin-top: 50px !important;
+        .fas{
+            font-size: 20px;
+        }
+        #mail{
+            font-size: 14px !important;
+        }
+    
+        #school{
+            font-size: 14px !important;
+            margin-left: 85px !important;
+        }
+        #contact{
+            font-size: 14px !important;
+            margin-left: 60px !important;
+        }
+    }
+}
+@media(min-width:450px) and (max-width:768px){
+    #info-header{
+        min-width: 55rem !important;
+        .fas{
+            font-size: 18px;
+        }
+        #mail{
+            margin-left: 150px;
+            font-size: 18px !important;
+        }
+        #school{
+            margin-left: 150px !important;
+            img{
+                width: 40px !important;
+                height: 40px !important;
+                font-size: 18px !important;
+            }
+        }
+        #contact{
+            margin-left: 160px !important;
+            font-size: 18px !important;
+        }
+    }
+    #menu-header{
+        min-width: 55rem !important;
+    }
+}
+
