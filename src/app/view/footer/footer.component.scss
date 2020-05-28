@@ -1,0 +1,113 @@
+#footer{
+    #address, #phone, #email{
+        margin-top: 10px;
+    }
+    
+    .card{
+        margin-top: -48rem;
+        border-radius: 20px;
+        margin-bottom: 5rem;
+    }
+    .v1{
+        margin-left: 2px;
+        border-right: 2px solid #fff;
+        margin-top: 30px;
+        height: 60px;
+        border-radius: 2px;
+    }
+    .v2{
+        margin-left: 2px;
+        border-right: 2px solid #fff;
+        margin-top: 10px;
+        height: 110px;
+        border-radius: 2px;
+    }
+    
+    #detail{
+        margin-bottom: 10rem;
+        h2{
+            font-family: 'Courier New', Courier;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        p{
+            font-family: Georgia;
+        }
+        p:hover{
+            color: red;
+        }
+    }
+    #social{
+        margin-top: -8rem;
+        font-size: 26px;
+    }
+    .social1:hover{
+        color: rgb(12, 194, 207);
+    }
+}
+@media(max-width:420px){
+    #footer{
+       
+        background: url(/assets/img/crowd.jpg);
+        p:hover{
+            color: red;
+        }
+        .social1:hover{
+            color: rgb(12, 194, 207);
+        }
+        
+        .card{
+            height: 300px;
+            h4{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px;
+            }
+            .v1{
+                margin-left: 0px !important;
+                border-right: 0px solid #fff !important;
+                margin-top: 1px !important;
+                height: 0px !important;
+                border-radius: 2px; 
+            }
+            .v2{
+                margin-left: 0px !important;
+                border-right: 0px solid #fff !important;
+                margin-top: 1px !important;
+                height:0px !important;
+                border-radius: 2px;
+            }
+            h3{
+                font-size: 12px !important;
+            }
+            .fas{
+                font-size: 14px !important;
+            }
+        }#detail{
+            
+            margin-top: -4rem;
+            #school-logo{
+                h3{
+                    font-size: 16px !important;
+                }
+                p{
+                    display: none;
+                }
+            }
+            img{
+                height: 50px !important;
+                width: 50px !important;
+            }
+            h2{
+                margin-top: 2px !important;
+                font-size: 18px !important;
+                margin-bottom: 5px !important;
+            }
+            p{
+                font-size: 12px !important;
+            }
+        }
+    }
+}

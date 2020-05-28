@@ -1,0 +1,54 @@
+$primary: #3292a6;
+#facilities{
+    margin-bottom: 100px;
+    margin-top: 60px;
+    h2{
+        color: red;
+        font-family: cursive;
+    }
+    hr{
+        border-radius: 5px;
+    }
+    .card{
+        height: 600px;
+        border-radius: 10px;
+       
+        .card-body:hover{
+            background: $primary;
+            color: #fff;
+        }
+    }
+    .carousel-item{
+        img{
+            max-height: 300px;
+            border-top-left-radius:10px ;
+            border-top-right-radius:10px ;
+        }
+    }
+}
+@media(max-width:380px){
+    .card{
+        max-height:500px !important ;
+        .card-body{
+            h3{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px !important;
+            }
+        }
+    }
+}
+@media(min-width:381px) and (max-width:420px){
+    .card{
+        max-height:500px !important ;
+        .card-body{
+            h3{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px !important;
+            }
+        }
+    } 
+}

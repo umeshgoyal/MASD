@@ -1,0 +1,34 @@
+#about{
+    margin-top: 40px;
+    h2{
+        color: red;
+        font-family: cursive;
+    }
+    h3{
+        font-family: monospace;
+    }
+    hr{
+        border-radius: 5px;
+    }
+    .d-flex{
+        margin-top: 30px;
+    }
+    .collapse{
+        background: #fff;
+    }
+    img{
+        height: 400px;
+    }
+    #member{
+        .card{
+            border-radius: 15px;
+            img{
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+        }
+        .card-footer{
+            margin-top: -15px;
+        }
+    }
+}

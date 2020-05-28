@@ -1,0 +1,29 @@
+<div id="about">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="school-image">
+            <img src="/assets/img/about-school.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 " id="about-type">
+            <div class="container">
+                <div class="card shadow-lg ">
+                    <h3 class="card-title text-center">About Us</h3>
+                    <hr class="bg-danger pb-1 w-50">
+                    <div class="card-body">
+                        <p class="lead" routerLink="/about/masd"><span><i class="fas fa-angle-double-right"></i></span>About MASD</p>
+                        <p class="lead" routerLink="/about/why-masd"><span><i class="fas fa-angle-double-right"></i></span>Why MASD?</p>
+                        <p class="lead" routerLink="/about/history"><span><i class="fas fa-angle-double-right"></i></span>History & Vision</p>
+                        <p class="lead" routerLink="/about/chairman-message"><span><i class="fas fa-angle-double-right"></i></span>Chairman Message</p>
+                        <p class="lead" routerLink="/about/viceChairman-message"><span><i class="fas fa-angle-double-right"></i></span>Vice Chairman Message</p>
+                        <p class="lead" routerLink="/about/auditor-message"><span><i class="fas fa-angle-double-right"></i></span>Auditor Message</p>
+                        <p class="lead" routerLink="/about/principal"><span><i class="fas fa-angle-double-right"></i></span>From Principal Desk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9" id="about-detail">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

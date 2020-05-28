@@ -23,15 +23,30 @@
     <nav class="navbar navbar-light text-dark">
         <div class="conatiner">
             <div id="mail">
-                <span class="ml-2 "><i class="fas fa-envelope-square"></i>  masd1@rediffmail.com,masdschool@gmail.com</span>
+                <div class="d-flex row">
+                    <div class="col-log-4 col-md-4 col-sm-4 col-xs-4" id="mail-logo">
+                        <span class="ml-2 my-auto"><i class="fas fa-envelope-square"></i> </span>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="mail-text">
+                    <p style="display: inline;"> masd1@rediffmail.com</p>
+                    <p>masdschool@gmail.com</p>
+                </div>
+                </div>
             </div>
             <div id="school">
                 <img src="/assets/img/School_Logo.png" alt="School" class="img-responsive">
                 <p>MASD Public School</p>
             </div>
             <div id="contact">
-                <span><i class="fas fa-phone-volume"></i></span>
-                <p>+91-9992023600, +91-8222877165</p>
+                <div class="d-flex row">
+                    <div class="col-log-4 col-md-4 col-sm-4 col-xs-4" id="phone-logo">
+                        <span class="ml-2 my-auto"><i class="fas fa-phone-volume"></i></span>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="phone-text">
+                        <p> +919992023600 </p>
+                        <p style="margin-top: -10px;"> +918222877165</p>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -40,7 +55,7 @@
 <!-- Menu header -->
 
 <div id="menu-header" class="bg-dark">
-    <nav class="navbar navbar-expand-sm navbar-expand-md bg-dark text-light" >
+    <nav class="navbar navbar-expand-md navbar-expand-md bg-dark text-light" >
         <button class="navbar-toggler"
             data-toggle="collapse"
             data-target="#menuNav">
@@ -48,76 +63,109 @@
         </button>
         <div class="collapse navbar-collapse" id="menuNav">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav">Home</a>
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
+                    routerLink="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav">CBSE MENDATE</a>
+                <li class="nav-item" >
+                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
+                    routerLink="/">CBSE MENDATE</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" >
                     <a class="nav-link dropdown-toggle" >About Us</a>
                     <div class="dropdown-menu">
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">About MASD</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Why MASD?</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">History & Vision</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Chairman Message</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Vice Chairman Message</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Auditor Message</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">From Principal Desk</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/about/masd">About MASD</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/about/why-masd">Why MASD?</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/about/history">History & Vision</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/about/chairman-message">Chairman Message</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/about/viceChairman-message">Vice Chairman Message</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/about/auditor-message">Auditor Message</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/about/principal">From Principal Desk</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" >
                     <a class="nav-link dropdown-toggle" >Facilities</a>
                     <div class="dropdown-menu">
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Chemistry Lab</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Smart Class</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Swimming pool</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Math's lab</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Art Lab</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Robitics Lab</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Physics Lab</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Biology Lab</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Music & Dance</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Chemistry Lab</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Smart Class</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Swimming pool</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Math's lab</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Art Lab</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Robitics Lab</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Physics Lab</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Biology Lab</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Music & Dance</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" >
                     <a class="nav-link dropdown-toggle" >Academic</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Fee Structure</a>
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Curriculm</a>
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Seminar & Worshop</a>
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">MASD Faculty</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Fee Structure</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Curriculm</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Seminar & Worshop</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">MASD Faculty</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" >
                     <a class="nav-link dropdown-toggle" >Student Corner</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Syllabus</a>
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Summer Vacation Homework</a>
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Winter Holidays Homework</a>
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Meal Chart</a>
-                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Date Sheet </a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Syllabus</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Summer Vacation Homework</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Winter Holidays Homework</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Meal Chart</a>
+                        <a class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Date Sheet </a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav">PAY ONLINE</a>
+                <li class="nav-item" >
+                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
+                    routerLink="/">PAY ONLINE</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav">REGISTER ONLINE</a>
+                <li class="nav-item" >
+                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
+                    routerLink="/">REGISTER ONLINE</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" >
                     <a class="nav-link dropdown-toggle" >Transport</a>
                     <div class="dropdown-menu">
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Transport Routes</a>
-                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav">Bus Tracking</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Transport Routes</a>
+                        <a  class="dropdown-item" data-toggle="collapse" data-target="#menuNav"
+                        routerLink="/">Bus Tracking</a>
                     </div>
                 </li>
   
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav">ERP-Login</a>
+                <!-- <li class="nav-item" >
+                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
+                    routerLink="/">Login</a>
+                </li> -->
+                <li class="nav-item" >
+                    <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
+                    routerLink="/">ERP-Login</a>
                 </li>
             </ul>
         </div>

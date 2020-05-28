@@ -8,28 +8,53 @@
     #university:hover{
         color: rgb(47, 140, 177);
     }
+    #university{
+        margin-left: -130px;
+    }
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    z-index: 100;
+    border-top: 0;
+
 }
 
 #info-header{
     margin-top: 35px;
     .fas{
-        font-size: 30px;
+        font-size: 45px;
     }
     #mail{
         display: inline-block;
         padding-top: 1rem;
         font-size: 16px;
+        span{
+            display: inline;
+        }
+        #mail-logo{
+            width: fit-content;
+        }
+        #mail-text{
+            margin-left: -30px;
+            width: fit-content;
+        }
         
     }
     #school{
-        font-size: 30px;
+        padding-top: 10px !important;
+        font-size: 50px;
+
+        color: rgb(15, 91, 121);
         font-weight: bold;
-        margin-left: 120px;
+        margin-left: 200px;
         display: inline-block;
         img{
             display: inline-block;
-            width: 70px;
-            height: 70px;
+            width: 100px;
+            height: 100px;
             margin-right: 8px;
         }
         p{
@@ -38,14 +63,14 @@
     }
     #contact{
         font-size: 16px;
-        margin-left: 200px;
+        margin-left: 100px !important;
         display: inline-block;
-        span{
-            margin-right: 8px;
-            display: inline;
+        #phone-logo{
+            width: fit-content;
         }
-        p{
-            display: inline;
+        #phone-text{
+            margin-left: -10px;
+            width: fit-content;
         }
     }
 }
@@ -63,9 +88,15 @@
 }
 
 @media(max-width:380px){
+    .sticky{
+        top: 50px !important;
+    }
     #topBar{
         #school{
             width: 100%;
+        }
+        #university{
+            margin-left: 40px !important;
         }
         #social-media{
             padding-right: 50px !important;
@@ -76,21 +107,35 @@
     }
     #info-header{
         .fas{
-            font-size: 20px;
+            font-size: 40px !important;
         }
         
         min-width: 26rem;
         margin-top: 50px !important;
         #mail{
+            margin-left: 80px;
             font-size: 14px !important;
+            #mail-text{
+                margin-left: -10px !important;
+                
+            }
         }
         #school{
+            img{
+                width: 60px !important;
+                height: 60px !important;
+            }
             font-size: 14px !important;
-            margin-left: 75px;
+            margin-left: 45px !important ;
+            margin-bottom: 10px !important;
         }
         #contact{
+           
+            .fas{
+                font-size: 30px !important;
+            }
             font-size: 14px !important;
-            margin-left: 60px;
+            margin-left: 80px !important;
         }
     }
     #menu-header{
@@ -130,38 +175,82 @@
     }
 }
 
-@media(max-width:420px){
+@media(max-width:420px) and (min-width:381px){
+    .sticky{
+        top: 50px !important;
+    }
+    #topBar{
+        #school{
+            width: 100%;
+        }
+        #university{
+            margin-left: 40px !important;
+        }
+        #social-media{
+            padding-right: 110px !important;
+        }
+        p{
+            padding-right: 40px !important  ;
+        }
+    }
     #info-header{
         margin-top: 50px !important;
         .fas{
-            font-size: 20px;
+            font-size: 45px !important;
         }
         #mail{
+            margin-left: 60px !important;
             font-size: 14px !important;
+            #mail-text{
+                margin-left: -10px !important;
+                
+            }
         }
     
         #school{
             font-size: 14px !important;
-            margin-left: 85px !important;
+            margin-left: 55px !important;
+            margin-bottom: 10px !important;
         }
         #contact{
+            .fas{
+                font-size: 30px !important;
+            }
             font-size: 14px !important;
             margin-left: 60px !important;
         }
     }
 }
-@media(min-width:450px) and (max-width:768px){
+@media(min-width:421px) and (max-width:768px){
+    .sticky{
+        top: 50px !important;
+    }
+    #topBar{
+        max-width: 18rem !important;
+        #university{
+            margin-left: 2px !important;
+        
+        }
+        #social-media{
+            padding-right: 110px !important;
+        }
+        p{
+            padding-right: 60px;
+        }
+    }
+
     #info-header{
-        min-width: 55rem !important;
+        margin-top: 60px !important;
         .fas{
             font-size: 18px;
         }
         #mail{
-            margin-left: 150px;
+            margin-left: 120px;
             font-size: 18px !important;
         }
         #school{
-            margin-left: 150px !important;
+            font-size: 18px !important;
+            margin-left: 120px !important;
             img{
                 width: 40px !important;
                 height: 40px !important;
@@ -169,12 +258,54 @@
             }
         }
         #contact{
-            margin-left: 160px !important;
+            
+            margin-left: 130px !important;
             font-size: 18px !important;
         }
     }
+    
+}
+@media(min-width:1220px) and (max-width:1318px){
+    #info-header{
+        #school{
+            margin-left: 100px !important;
+        }
+        
+    }
     #menu-header{
-        min-width: 55rem !important;
+        a{
+            font-size: 16px !important;
+            margin-right: 4px !important;
+        }
+    }
+    #topBar{
+        #university{
+            margin-left: 2px !important;
+        }
     }
 }
-
+@media(min-width:1034px) and (max-width:1223px){
+    #info-header{
+        #school{
+            margin-left: 100px !important;
+            font-size: 30px !important;
+            img{
+                width: 80px !important;
+                height: 80px !important;
+            }
+        }
+    }
+    #topBar{
+        #university{
+            margin-left: 2px !important;
+        }
+    }
+    #menu-header{
+        a{
+            margin-right: 2px !important;
+        }
+    }
+}
+@media(min-width:770px) and (max-width:1117px){
+    #topBar{}
+}

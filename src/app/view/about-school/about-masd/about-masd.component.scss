@@ -1,0 +1,28 @@
+#about-masd{
+    .card{
+        border-radius: 20px;
+        .card-title{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        .card-body{
+            margin-left: 20px;
+            margin-right: 20px;
+            h5{
+                margin-top: 20px;
+            }
+            hr{
+                padding-top: 2px;
+                margin-top: -10px;
+                margin-left: -10px;
+                width: 180px;
+                margin-bottom: 30px;
+            }
+            .less{
+                margin-top: -14px;
+            }
+        }
+    }
+}

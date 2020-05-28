@@ -1,0 +1,50 @@
+$primary: #3292a6;
+
+#cards{
+    .card{
+        height: 200px;
+        border-radius: 10px;
+        background: rgb(9, 49, 82);
+        color: #fff;
+        img{
+            height: 200px;
+            margin-top: -50px;
+            margin-left: 30px;
+        }
+        .card-body{
+            margin-top: -10px;
+        }
+
+    }
+    .card:hover{
+        background: $primary;
+        color:#fff;
+    }
+}
+
+
+@media(max-width:380px){
+    #cards{
+        .card{
+            margin-left: 30px !important;
+            margin-top: 30px !important;
+            margin-bottom: 30px !important;
+        }
+        #first{
+            margin-top: 55px !important;
+        }
+    }
+    #slide1{
+        min-width: 26rem !important;
+    }
+}
+@media(min-width:321px) and (max-width:420px){
+    #cards{
+        .card{
+            margin-left: 30px !important;
+            margin-top: 30px !important;
+            margin-bottom: 30px !important;
+        }
+        
+    }  
+}

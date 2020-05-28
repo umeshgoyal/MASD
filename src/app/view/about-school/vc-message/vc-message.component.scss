@@ -1,0 +1,23 @@
+#vcMessage{
+    margin-top: 150px;
+    .card{
+        border-radius: 20px;
+        img{
+            margin-left: 240px;
+           margin-top: -140px;
+            height: 300px;
+        }
+        .card-title{
+            
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .card-body{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+    }
+}
