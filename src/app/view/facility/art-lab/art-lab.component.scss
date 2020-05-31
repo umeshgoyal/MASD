@@ -1,0 +1,46 @@
+#art{
+    .card{
+        border-radius: 20px;
+        .card-title{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        .card-body{
+            margin-left: 80px;
+            img{
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            p{
+                margin-left: -10px !important;
+                
+            }
+            
+        }
+    }
+}
+@media(max-width:380px){
+    #art{
+        .card-title{
+            margin-left: 40px !important;
+        }
+        .card-body{
+            margin-left: 30px !important;
+        }
+    }
+
+}
+@media(min-width:381px) and (max-width:420px){
+    #art{
+        .card-title{
+            margin-left: 50px !important;
+        }
+        .card-body{
+            margin-left: 30px !important;
+        }
+    }
+
+}
+

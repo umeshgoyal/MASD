@@ -1,0 +1,19 @@
+#cbse{
+    margin-bottom: 150px;
+    #school-image{
+        background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url(/assets/img/about-school.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 200px;
+        
+        img{
+            border-radius: 5px;
+            height: 200px;
+        
+        }
+    }
+    h1{
+        margin-left: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+    }
+}

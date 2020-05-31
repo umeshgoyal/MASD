@@ -1,0 +1,26 @@
+<div id="academic">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="school-image">
+            <img src="/assets/img/about-school.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 " id="academic-type">
+            <div class="container">
+                <div class="card shadow-lg ">
+                    <h3 class="card-title text-center">Academic</h3>
+                    <hr class="bg-danger pb-1 w-50">
+                    <div class="card-body">
+                        <p class="lead" routerLink="/academic/fee"><span><i class="fas fa-angle-double-right"></i></span>Fee Structure</p>
+                        <p class="lead" routerLink="/academic/curriculum"><span><i class="fas fa-angle-double-right"></i></span>Curriculum</p>
+                        <p class="lead" routerLink="/academic/seminar"><span><i class="fas fa-angle-double-right"></i></span>Seminar & Workshop</p>
+                        <p class="lead" routerLink="/academic/faculty"><span><i class="fas fa-angle-double-right"></i></span>MASD Faculty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9" id="academic-detail">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

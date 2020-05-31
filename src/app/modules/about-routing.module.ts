@@ -10,7 +10,7 @@ import { PrincipalComponent } from '../view/about-school/principal/principal.com
 import { AuditorMessageComponent } from '../view/about-school/auditor-message/auditor-message.component';
 
 const route:Routes=[
-    {path:'about',component:AboutSchoolComponent,children:[
+    {path:'',component:AboutSchoolComponent,children:[
         {path:'masd',component:AboutMasdComponent},
         {path:'why-masd',component:AboutWhyComponent},
         {path:'history',component:HistoryComponent},

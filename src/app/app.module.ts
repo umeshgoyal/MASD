@@ -10,6 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { FacilitiesComponent } from './view/homepage/facilities/facilities.component';
 import { FooterComponent } from './view/footer/footer.component';
 import { AboutModule } from './modules/about.module';
+import { CbseMendateComponent } from './view/cbse-mendate/cbse-mendate.component';
+import { FacilityModule } from './modules/facility.module';
+import { AcademicModule } from './modules/academic.module';
+import { StudentModule } from './modules/student.module';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,16 @@ import { AboutModule } from './modules/about.module';
     HomeComponent,
     AboutUsComponent,
     FacilitiesComponent,
-    FooterComponent
+    FooterComponent,
+    CbseMendateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AboutModule
+    AboutModule,
+    FacilityModule,
+    AcademicModule,
+    StudentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

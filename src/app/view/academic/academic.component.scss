@@ -1,0 +1,40 @@
+#academic{
+    margin-bottom: 150px;
+    #school-image{
+        background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url(/assets/img/about-school.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 200px;
+        
+        img{
+            border-radius: 5px;
+            height: 200px;
+        
+        }
+    }
+    hr{
+        border-radius: 10px;
+        margin-top: -10px;
+        margin-left: 80px;
+    }
+    #academic-type{
+        margin-top: 20px;
+        .card{
+            border-radius: 20px;
+            .card-title{
+                margin-top: 10px;
+                font-family: cursive;
+                font-weight: bold;
+            }
+            .card-body{
+                margin-left: 30px;
+                p:hover{
+                    margin-left: 11px;
+                    color: red;
+                }
+            }
+        }
+    }
+    #academic-detail{
+        margin-top: 20px;
+    }
+}

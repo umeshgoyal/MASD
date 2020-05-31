@@ -1,0 +1,27 @@
+<div id="student">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="school-image">
+            <img src="/assets/img/about-school.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-lg-3 col-md-3 " id="student-type">
+            <div class="container">
+                <div class="card shadow-lg ">
+                    <h3 class="card-title text-center">Student-Corner</h3>
+                    <hr class="bg-danger pb-1 w-50">
+                    <div class="card-body">
+                        <p class="lead" routerLink="/student/syllabus"><span><i class="fas fa-angle-double-right"></i></span>Syllabus</p>
+                        <p class="lead" routerLink="/student/summer"><span><i class="fas fa-angle-double-right"></i></span>Holidays Homework-Summer</p>
+                        <p class="lead" routerLink="/student/winter"><span><i class="fas fa-angle-double-right"></i></span>Holidays Homework-Winter</p>
+                        <p class="lead" routerLink="/student/meal-chart"><span><i class="fas fa-angle-double-right"></i></span>Meal Chart</p>
+                        <p class="lead" routerLink="/student/date-sheet"><span><i class="fas fa-angle-double-right"></i></span>Date Sheet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9" id="student-detail">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

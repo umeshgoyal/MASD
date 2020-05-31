@@ -1,11 +1,14 @@
 #auditorMessage{
-    margin-top: 150px;
     .card{
         border-radius: 20px;
         img{
-            margin-left: 240px;
-           margin-top: -140px;
-            height: 300px;
+            margin-left: 100px;
+           margin-top: 20px;
+           border-radius: 20px;   
+        }
+        h4{
+            margin-top: 5px;
+            margin-left: 130px;
         }
         .card-title{
             
@@ -19,5 +22,41 @@
             margin-right: 20px;
         }
 
+    }
+}
+@media(max-width:380px){
+    #auditorMessage{
+        .card{
+            #head{
+                margin-top: 50px !important;
+            }
+            .card-title{
+                margin-left: 10px !important;
+            }
+            img{
+                margin-left: 20px !important;
+            }
+            h4{
+                margin-left: 80px !important;
+            }
+        }
+    }
+}
+@media(min-width:381px) and (max-width:420px){
+    #auditorMessage{
+        .card{
+            #head{
+                margin-top: 50px !important;
+            }
+            .card-title{
+                margin-left: 10px !important;
+            }
+            img{
+                margin-left: 40px !important;
+            }
+            h4{
+                margin-left: 120px !important;
+            }
+        }
     }
 }
