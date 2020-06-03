@@ -32,3 +32,62 @@
         }
     }
 }
+#calender{
+    margin-top: 40px;
+    .card{
+        border-radius: 5px;
+        height: 70px;
+        .card-title{
+            margin-left: 20px;
+        }
+        p{
+            margin-top: -30px;
+        }
+    }
+
+    .movingText {
+        height: 50px;  
+        overflow: hidden;
+        position: relative;
+        height:250px;
+       }
+       .movingText .card {
+        font-size: 3em;
+        color: blue;
+        position: absolute;
+        width: 100%;
+    
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        /* Starting position */
+        -moz-transform:translateY(100%);
+        -webkit-transform:translateY(100%);    
+        transform:translateX(100%);
+        /* Apply animation to this element */  
+        -moz-animation: movingText 15s linear infinite;
+        -webkit-animation: movingText 15s linear infinite;
+        animation: movingText 15s linear infinite;
+       }
+       /* Move it (define the animation) */
+       @-moz-keyframes movingText {
+        0%   { -moz-transform: translateY(100%); }
+        100% { -moz-transform: translateY(-100%); }
+       }
+       @-webkit-keyframes movingText {
+        0%   { -webkit-transform: translateY(100%); }
+        100% { -webkit-transform: translateY(-100%); }
+       }
+       @keyframes movingText {
+        0%   { 
+        -moz-transform: translateY(100%); /* Firefox bug fix */
+        -webkit-transform: translateY(100%); /* Firefox bug fix */
+        transform: translateY(100%);       
+        }
+        100% { 
+        -moz-transform: translateY(-100%); /* Firefox bug fix */
+        -webkit-transform: translateY(-100%); /* Firefox bug fix */
+        transform: translateY(-100%); 
+        }
+       }
+}

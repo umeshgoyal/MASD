@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './view/header/header.component';
@@ -32,7 +33,9 @@ import { StudentModule } from './modules/student.module';
     AboutModule,
     FacilityModule,
     AcademicModule,
-    StudentModule
+    StudentModule,
+    CalendarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
