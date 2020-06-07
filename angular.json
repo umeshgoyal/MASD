@@ -29,10 +29,20 @@
             ],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
-              "src/styles.scss"
+              "node_modules/lightbox2/dist/css/lightbox.css",
+              "src/styles.scss",
+              "node_modules/roboto-fontface/css/roboto/sass/roboto-fontface-black.scss",
+              "node_modules/roboto-fontface/css/roboto/sass/roboto-fontface-bold.scss",
+              "node_modules/roboto-fontface/css/roboto-condensed/sass/roboto-condensed-fontface-bold.scss",
+              "node_modules/roboto-fontface/css/roboto-slab/sass/roboto-slab-fontface-bold.scss"
+
+
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/lightbox2/dist/js/lightbox.js",
+              "node_modules/waypoints/lib/jquery.waypoints.min.js",
+              "node_modules/jquery.counterup/jquery.counterup.min.js"
             ]
           },
           "configurations": {

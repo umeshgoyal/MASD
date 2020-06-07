@@ -2,23 +2,37 @@ $primary: #3292a6;
 
 #cards{
     .card{
-        height: 200px;
+        height: 150px;
         border-radius: 10px;
-        background: rgb(9, 49, 82);
+        background: black;
         color: #fff;
-        img{
-            height: 200px;
-            margin-top: -50px;
-            margin-left: 30px;
+        .icons{
+            margin-top: -20px;
+            span{
+                background-color: black;
+                border-radius: 60px;
+                padding: 30px;
+                color: red;
+                font-size: 50px;
+            }
         }
+        
         .card-body{
-            margin-top: -10px;
+           // margin-top: 10px;
+           font-family: 'Roboto Condensed',sans-serif;
+           font-size: 20px;
         }
 
     }
     .card:hover{
-        background: $primary;
+        background:red;
         color:#fff;
+        .icons{
+            span{
+                color: #fff;
+                background-color: red;
+            }
+        }
     }
 }
 

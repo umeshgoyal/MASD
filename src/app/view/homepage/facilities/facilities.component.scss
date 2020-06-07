@@ -3,9 +3,11 @@ $primary: #3292a6;
     margin-bottom: 100px;
     margin-top: 60px;
     h2{
-        color: red;
-        font-family: cursive;
+        font-weight: bold;
+        font-family: 'Roboto Condensed',sans-serif;
+        font-size: 30px;
     }
+    
     hr{
         border-radius: 5px;
     }
@@ -16,6 +18,32 @@ $primary: #3292a6;
         .card-body:hover{
             background: $primary;
             color: #fff;
+        }
+        .card-title{
+            font-weight: bold;
+            font-family:'Roboto Condensed',sans-serif ;
+        }
+        p{
+            font-family:'Roboto Condensed',sans-serif ;
+            font-size: 18px; 
+        }
+    }
+    .carousel-control-prev{
+        margin-left: -100px !important;
+        span{
+            border-radius: 30px;
+            background-color:red !important;
+            width:60px !important;
+            height: 60px !important;
+        }
+    }
+    .carousel-control-next{
+        margin-right: -100px !important;
+        span{
+            border-radius: 30px;
+            background-color:red !important;
+            width:60px !important;
+            height: 60px !important;
         }
     }
     .carousel-item{

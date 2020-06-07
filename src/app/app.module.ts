@@ -15,6 +15,8 @@ import { CbseMendateComponent } from './view/cbse-mendate/cbse-mendate.component
 import { FacilityModule } from './modules/facility.module';
 import { AcademicModule } from './modules/academic.module';
 import { StudentModule } from './modules/student.module';
+import { AcheivementsComponent } from './view/homepage/acheivements/acheivements.component';
+import { MediaComponent } from './view/homepage/media/media.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { StudentModule } from './modules/student.module';
     AboutUsComponent,
     FacilitiesComponent,
     FooterComponent,
-    CbseMendateComponent
+    CbseMendateComponent,
+    AcheivementsComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
