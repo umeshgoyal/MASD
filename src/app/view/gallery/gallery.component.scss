@@ -1,0 +1,25 @@
+#gallery{
+    margin-bottom: 150px;
+    #gallery-title{
+        h2{
+            margin-top: 40px;
+            font-family: 'Roboto Condensed',sans-serif;
+            font-weight: bold;
+        }
+        hr{
+            width: 240px;
+            border-radius: 10px;
+            background-color: #ff3115;
+            margin-bottom: 30px;
+        }
+    }
+    img{
+        width: 250px;
+        height: 200px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+}

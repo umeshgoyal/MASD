@@ -5,47 +5,136 @@
     background-position: center top;
     padding-top: 70px;
     padding-bottom: 300px;
+    background-repeat: no-repeat;
+    position: relative;
     #testimonial-title{
         h2{
+            color: #fff;
             font-family: 'Roboto Condensed',sans-serif;
             font-weight: bold;
-            color: #fff;
+            font-size: 30px;
+
         }
         hr{
             background-color: #ff3115;
-            width: 350px;
+            padding-bottom: 5px;
+            width: 320px;
             border-radius: 10px;
-            margin-bottom: 100px;
         }
     }
-    
-    
-    .card{
-    
-            img{margin-left: 160px;
-                width: 200px;
-                height: 200px;
-                border-radius: 100%;
-            }
-            background-color: #fff;
-            .card-body{
-                .fas{
-                    font-size: 24px !important;
-                    color: #ff3115;
-                }
-                .card-title{
-                    margin-top: 10px;
-                    font-size: 20px;
-                    font-family: 'Roboto Condensed',sans-serif;
-                    font-weight: bold;
-                    color: #212121;
-                }
-                p{
-                    font-family: 'Roboto Condensed',sans-serif;
-                    font-size: 16px;
-                    color: #505050;
-                }
-            }
+    .indicator{
+        
+        font-size: 30px;
+        padding-bottom:5px ;
+        
     }
+    .col-lg-12{
+        position: relative;
+        
+    }
+    #testimonial-detail{
+        position: relative;
+        background: #fff;
+        border-radius: 10px;
+        height: 260px;
+        img{
+            margin-left: -37px;
+            left: 50%;
+            position: absolute;
+            top: -12%;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            border: 5px solid #fff;
+        }
+        
+        #main-content{
+            position: relative;
+            margin: 35px 0;
+            .fa-quote-left{
+                padding-top: 50px;
+                margin-left: 37px;
+                font-size: 32px;
+                color: #ff3115;
+            }
+            .fa-quote-right{
+                margin-right: 37px;
+                font-size: 32px;
+                color: #ff3115;
+            }
+            h4{
+                font-family: 'Roboto Condensed',sans-serif;
+               font-weight: bold;
+                margin-left: 37px;
+                top: 50px;
+                padding-top: 10px;
+                font-weight: 700px;
+                font-size: 20px;
+                color: #252525;
+                //margin-bottom: 15px;
+                transition: all 0.4s ease-in-out 0s;
+               // -webkit-transition: all .4s ease-in-out;
+            }
+            p{
+                font-family: 'Roboto Condensed',sans-serif;  
+                margin-left: 37px;
+                margin-right: 37px;
+                font-size: 15px;
+                color: #666;
+                
+            }
+        }
+    }
+    #testimonial-detail:hover{
+        img{
+            border: 5px solid #ff3115;
+            transform: rotate(360deg);
+            //-webkit-transform: rotate(360deg);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+    }
+    // #testimonial-title{
+    //     h2{
+    //         font-family: 'Roboto Condensed',sans-serif;
+    //         font-weight: bold;
+    //         color: #fff;
+    //     }
+    //     hr{
+    //         background-color: #ff3115;
+    //         width: 350px;
+    //         border-radius: 10px;
+    //         margin-bottom: 100px;
+    //     }
+    // }
+    
+    
+    // .card{
+    
+    //         img{margin-left: 160px;
+    //             width: 200px;
+    //             height: 200px;
+    //             border-radius: 100%;
+    //         }
+    //         background-color: #fff;
+    //         .card-body{
+    //             .fas{
+    //                 font-size: 24px !important;
+    //                 color: #ff3115;
+    //             }
+    //             .card-title{
+    //                 margin-top: 10px;
+    //                 font-size: 20px;
+    //                 font-family: 'Roboto Condensed',sans-serif;
+    //                 font-weight: bold;
+    //                 color: #212121;
+    //             }
+    //             p{
+    //                 font-family: 'Roboto Condensed',sans-serif;
+    //                 font-size: 16px;
+    //                 color: #505050;
+    //             }
+    //         }
+    // }
 
 }

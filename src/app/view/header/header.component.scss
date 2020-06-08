@@ -1,9 +1,13 @@
 #topBar{
+    
     p{
         width: fit-content;
     }
+    .social{
+        color: #888888;
+    }
     .social:hover{
-        color:#ff3115;
+        color:#fff;
     }
     #university:hover{
         color: #ff3115;
