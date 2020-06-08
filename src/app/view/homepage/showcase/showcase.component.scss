@@ -12,7 +12,7 @@ $primary: #3292a6;
                 background-color: black;
                 border-radius: 60px;
                 padding: 30px;
-                color: red;
+                color: #ff3115;
                 font-size: 50px;
             }
         }
@@ -25,12 +25,12 @@ $primary: #3292a6;
 
     }
     .card:hover{
-        background:red;
+        background:#ff3115;
         color:#fff;
         .icons{
             span{
                 color: #fff;
-                background-color: red;
+                background-color: #ff3115;
             }
         }
     }

@@ -46,7 +46,7 @@
             font-size: 20px;
         }
         p:hover{
-            color: red;
+            color: #ff3115;
             margin-left: 20px;
         }
     }
@@ -55,7 +55,7 @@
         font-size: 26px;
     }
     .social1:hover{
-        color: rgb(12, 194, 207);
+        color: #ff3115;
     }
 }
 @media(max-width:420px){
@@ -63,10 +63,10 @@
        
         background: url(/assets/img/crowd.jpg);
         p:hover{
-            color: red;
+            color: #ff3115;
         }
         .social1:hover{
-            color: rgb(12, 194, 207);
+            color: #ff3115;
         }
         
         .card{

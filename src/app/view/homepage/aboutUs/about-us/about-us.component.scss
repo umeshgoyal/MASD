@@ -11,6 +11,7 @@
     }
     hr{
         border-radius: 5px;
+        background-color: #ff3115;
     }
     p{
         font-family: 'Roboto Condensed',sans-serif;
@@ -24,7 +25,8 @@
         background: #fff;
     }
     img{
-        height: 400px;
+        height: 350px;
+        border-radius: 10px;
     }
     #member{
         .card{
@@ -44,7 +46,7 @@
             margin-top: -15px;
             #button-4
             {
-                background: red;
+                background: #ff3115;
                 box-sizing: border-box;
                 width: 220px;
                 height: 50px;
@@ -81,7 +83,7 @@
                     background: #fff;
                 }
                 a{
-                    color: #f30067 !important;
+                    color: #ff3115 !important;
                 }
             }
         }
@@ -89,7 +91,7 @@
     #accordion{
         .card{
             .card-header{
-                background-color: red;
+                background-color: #ff3115;
                 h5{
                     color: #fff !important;
                 }

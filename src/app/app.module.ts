@@ -17,6 +17,7 @@ import { AcademicModule } from './modules/academic.module';
 import { StudentModule } from './modules/student.module';
 import { AcheivementsComponent } from './view/homepage/acheivements/acheivements.component';
 import { MediaComponent } from './view/homepage/media/media.component';
+import { TestimonialComponent } from './view/homepage/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MediaComponent } from './view/homepage/media/media.component';
     FooterComponent,
     CbseMendateComponent,
     AcheivementsComponent,
-    MediaComponent
+    MediaComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,

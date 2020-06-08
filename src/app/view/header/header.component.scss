@@ -3,10 +3,10 @@
         width: fit-content;
     }
     .social:hover{
-        color: rgb(47, 140, 177);
+        color:#ff3115;
     }
     #university:hover{
-        color: rgb(47, 140, 177);
+        color: #ff3115;
     }
     #university{
         margin-left: -130px;
@@ -35,7 +35,7 @@
         #mail-logo{
             width: fit-content;
             span{
-                color: red;
+                color: #ff3115;
             }
         }
         #mail-text{
@@ -73,7 +73,7 @@
         #phone-logo{
             width: fit-content;
             span{
-                color: red;
+                color: #ff3115;
             }
         }
         #phone-text{
@@ -98,7 +98,7 @@
         
     }
     a:hover{
-        color: red;
+        color: #ff3115;
         
     }
     .dropdown:hover>.dropdown-menu{
@@ -113,7 +113,7 @@
         }
     }
     .dropdown-menu > a:hover{
-        color: red;
+        color: #ff3115;
         background-color: #212121;
     }
 }
