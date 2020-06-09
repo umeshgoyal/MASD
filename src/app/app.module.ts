@@ -19,6 +19,7 @@ import { AcheivementsComponent } from './view/homepage/acheivements/acheivements
 import { MediaComponent } from './view/homepage/media/media.component';
 import { TestimonialComponent } from './view/homepage/testimonial/testimonial.component';
 import { GalleryComponent } from './view/gallery/gallery.component';
+import { BookComponent } from './view/book/book.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { GalleryComponent } from './view/gallery/gallery.component';
     AcheivementsComponent,
     MediaComponent,
     TestimonialComponent,
-    GalleryComponent
+    GalleryComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
-<app-header></app-header>
-<div>
+<app-book *ngIf="showBook"></app-book>
+<app-header *ngIf="!showBook"></app-header>
+<div *ngIf="!showBook">
   <router-outlet (activate)="onActivate($event)"></router-outlet>
 </div>
-<app-footer></app-footer>
+<app-footer *ngIf="!showBook"></app-footer>
