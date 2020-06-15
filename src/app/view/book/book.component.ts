@@ -18,7 +18,7 @@ export class BookComponent implements OnInit {
     setTimeout(function(){ 
       $(".book-preload").hide(); 
       
-    }, 4000);
+    }, 6000);
   }
 
 }

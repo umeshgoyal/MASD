@@ -1,5 +1,6 @@
 #about{
     margin-top: 40px;
+    position: relative;
     h2{
         font-family:'Roboto Condensed',sans-serif;
         font-weight: bold;
@@ -100,71 +101,249 @@
                 }
             }
         }
-    }
-}
-#calender{
-    margin-top: 40px;
-    .card{
-        border-radius: 5px;
-        height: 70px;
-        .card-title{
-            margin-top: 5px;
-            margin-left: -35px;
-        }
-        p{
-            margin-top: -35px;
-            margin-left: -60px;
-        }
-    }
-
-    .movingText {
-        height: 50px;  
-        overflow: hidden;
-        position: relative;
-        height:250px;
-       }
-       .movingText .card {
-           margin-left: 15px !important;
-           margin-right: 10px;
-        
-        
-        position: absolute;
-        width: 90%;
+    }#news-calender{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        #news{
+            background: #fff;
+            border-radius: 20px;
+            color: #ff3115;
+            height: 300px;
+            border: 1px solid #ff3115 !important;
+            h3{
+                font-family: 'Roboto Condensed',sans-serif;
+                font-weight: bold;
+                color: #ff3115;
+                font-size: 24px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            .movingText {
+                        height: 50px;  
+                        overflow: hidden;
+                        position: relative;
+                        height: 200px;
+            }
+            .movingText .card {
+                border: 0px;
+                background: #fff;
+                margin-left: 15px !important;
+                margin-right: 10px;
+                color: #ff3115;
+                position: absolute;
+                width: 100%;
+                margin: 0;
+                line-height: 50px;
+                /* Starting position */
+                -moz-transform:translateY(100%);
+                -webkit-transform:translateY(100%);    
+                transform:translateX(100%);
+                /* Apply animation to this element */  
+                -moz-animation: movingText 15s linear infinite;
+                -webkit-animation: movingText 15s linear infinite;
+                animation: movingText 15s linear infinite;
+            }
+            .card:hover{
+                -moz-animation: movingText 30s linear infinite;
+                -webkit-animation: movingText 30s linear infinite;
+                animation: movingText 30s linear infinite;
+                
+            }
+            .card hr{
+                margin-right: 20px;
+                margin-top: -10px;
+            }
+            .card h5{
+                font-family: 'Roboto Condensed',sans-serif;
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #6f8090;
+            }
+            .card p{
+                margin-top: -20px;
+                margin-bottom: -30px;
+                font-size: 16px;
+            }
+            /* Move it (define the animation) */
+            @-moz-keyframes movingText {
+                0%   { -moz-transform: translateY(100%); }
+                100% { -moz-transform: translateY(-100%); }
+            }
+            @-webkit-keyframes movingText {
+                0%   { -webkit-transform: translateY(100%); }
+                100% { -webkit-transform: translateY(-100%); }
+            }
+            @keyframes movingText {
+                0%   { 
+                    -moz-transform: translateY(100%); /* Firefox bug fix */
+                    -webkit-transform: translateY(100%); /* Firefox bug fix */
+                    transform: translateY(100%);       
+                }
+                100% { 
+                    -moz-transform: translateY(-100%); /* Firefox bug fix */
+                    -webkit-transform: translateY(-100%); /* Firefox bug fix */
+                    transform: translateY(-100%); 
+                }
+            }
     
-        margin: 0;
-        line-height: 50px;
-        text-align: center;
-        /* Starting position */
-        -moz-transform:translateY(100%);
-        -webkit-transform:translateY(100%);    
-        transform:translateX(100%);
-        /* Apply animation to this element */  
-        -moz-animation: movingText 15s linear infinite;
-        -webkit-animation: movingText 15s linear infinite;
-        animation: movingText 15s linear infinite;
-       }
-       /* Move it (define the animation) */
-       @-moz-keyframes movingText {
-        0%   { -moz-transform: translateY(100%); }
-        100% { -moz-transform: translateY(-100%); }
-       }
-       @-webkit-keyframes movingText {
-        0%   { -webkit-transform: translateY(100%); }
-        100% { -webkit-transform: translateY(-100%); }
-       }
-       @keyframes movingText {
-        0%   { 
-        -moz-transform: translateY(100%); /* Firefox bug fix */
-        -webkit-transform: translateY(100%); /* Firefox bug fix */
-        transform: translateY(100%);       
         }
-        100% { 
-        -moz-transform: translateY(-100%); /* Firefox bug fix */
-        -webkit-transform: translateY(-100%); /* Firefox bug fix */
-        transform: translateY(-100%); 
+        #birthday{
+            background: #fff;
+            border-radius: 20px;
+            color: #ff3115;
+            height: 300px;
+            border: 1px solid #ff3115 !important;
+            h3{
+                font-family: 'Roboto Condensed',sans-serif;
+                font-weight: bold;
+                color: #ff3115;
+                font-size: 24px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            .movingText {
+                height: 50px;  
+                overflow: hidden;
+                position: relative;
+                height: 200px;
+            }
+            .movingText .card {
+                border: 1px solid #ff3115;
+                height: 100px;
+                background: #fff;
+                margin-left: 40px !important;
+                margin-right: 10px;
+                color: #ff3115;
+                position: absolute;
+                width: 80%;
+                margin: 0;
+                //border: 1px solid solid;
+                line-height: 50px;
+                /* Starting position */
+                -moz-transform:translateY(100%);
+                -webkit-transform:translateY(100%);    
+                transform:translateX(100%);
+                /* Apply animation to this element */  
+                -moz-animation: movingText 15s linear infinite;
+                -webkit-animation: movingText 15s linear infinite;
+                animation: movingText 15s linear infinite;
+            }
+            .card:hover{
+                -moz-animation: movingText 30s linear infinite;
+                -webkit-animation: movingText 30s linear infinite;
+                animation: movingText 30s linear infinite;
+                
+            }
+            .card img{
+                margin-top: 10px;
+                
+                width: 80px;
+                height: 80px;
+                margin-left: -30px;
+                margin-bottom: 40px;
+                //margin-top: -35px;
+            }
+            .card h5{
+                font-family: 'Roboto Condensed',sans-serif;
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #6f8090;
+            }
+            .card p{
+                margin-top: -20px;
+                margin-bottom: -30px;
+                font-size: 16px;
+            }
+            /* Move it (define the animation) */
+            @-moz-keyframes movingText {
+                0%   { -moz-transform: translateY(100%); }
+                100% { -moz-transform: translateY(-100%); }
+            }
+            @-webkit-keyframes movingText {
+                0%   { -webkit-transform: translateY(100%); }
+                100% { -webkit-transform: translateY(-100%); }
+            }
+            @keyframes movingText {
+                0%   { 
+                    -moz-transform: translateY(100%); /* Firefox bug fix */
+                    -webkit-transform: translateY(100%); /* Firefox bug fix */
+                    transform: translateY(100%);       
+                }
+                100% { 
+                    -moz-transform: translateY(-100%); /* Firefox bug fix */
+                    -webkit-transform: translateY(-100%); /* Firefox bug fix */
+                    transform: translateY(-100%); 
+                }
+            }
         }
-       }
+    }
+    
 }
+// #calender{
+//     margin-top: 40px;
+//     .card{
+//         border-radius: 5px;
+//         height: 70px;
+//         .card-title{
+//             margin-top: 5px;
+//             margin-left: -35px;
+//         }
+//         p{
+//             margin-top: -35px;
+//             margin-left: -60px;
+//         }
+//     }
+
+//     .movingText {
+//         height: 50px;  
+//         overflow: hidden;
+//         position: relative;
+//         height:250px;
+//        }
+//        .movingText .card {
+//            margin-left: 15px !important;
+//            margin-right: 10px;
+        
+        
+//         position: absolute;
+//         width: 90%;
+    
+//         margin: 0;
+//         line-height: 50px;
+//         text-align: center;
+//         /* Starting position */
+//         -moz-transform:translateY(100%);
+//         -webkit-transform:translateY(100%);    
+//         transform:translateX(100%);
+//         /* Apply animation to this element */  
+//         -moz-animation: movingText 15s linear infinite;
+//         -webkit-animation: movingText 15s linear infinite;
+//         animation: movingText 15s linear infinite;
+//        }
+//        /* Move it (define the animation) */
+//        @-moz-keyframes movingText {
+//         0%   { -moz-transform: translateY(100%); }
+//         100% { -moz-transform: translateY(-100%); }
+//        }
+//        @-webkit-keyframes movingText {
+//         0%   { -webkit-transform: translateY(100%); }
+//         100% { -webkit-transform: translateY(-100%); }
+//        }
+//        @keyframes movingText {
+//         0%   { 
+//         -moz-transform: translateY(100%); /* Firefox bug fix */
+//         -webkit-transform: translateY(100%); /* Firefox bug fix */
+//         transform: translateY(100%);       
+//         }
+//         100% { 
+//         -moz-transform: translateY(-100%); /* Firefox bug fix */
+//         -webkit-transform: translateY(-100%); /* Firefox bug fix */
+//         transform: translateY(-100%); 
+//         }
+//        }
+// }
+
+
 /* Example - styles */
 
 #container {

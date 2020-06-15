@@ -31,11 +31,10 @@
               "node_modules/bootstrap/scss/bootstrap.scss",
               "node_modules/lightbox2/dist/css/lightbox.css",
               "src/styles.scss",
-              "node_modules/roboto-fontface/css/roboto/sass/roboto-fontface-black.scss",
-              "node_modules/roboto-fontface/css/roboto/sass/roboto-fontface-bold.scss",
-              "node_modules/roboto-fontface/css/roboto-condensed/sass/roboto-condensed-fontface-bold.scss",
-              "node_modules/roboto-fontface/css/roboto-slab/sass/roboto-slab-fontface-bold.scss"
-
+              "node_modules/roboto-fontface/css/roboto/sass/roboto-fontface.scss",
+              "node_modules/roboto-fontface/css/roboto-slab/sass/roboto-slab-fontface.scss",
+              "node_modules/roboto-fontface/css/roboto-condensed/sass/roboto-condensed-fontface.scss",
+              "node_modules/animate.css/animate.min.css"
 
             ],
             "scripts": [

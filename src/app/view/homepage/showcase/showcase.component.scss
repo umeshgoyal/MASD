@@ -1,6 +1,29 @@
 $primary: #3292a6;
-
+#slide1{
+    position: relative;
+    .carousel-item{
+        img{
+            height: 650px;
+            width: 100%;
+        }
+        #building{
+            margin-top: -500px;
+            margin-left: 300px;
+        }
+        #admission{
+           margin-left: 278px;
+           margin-top: 21px;
+            font-size: 24px;
+            animation-delay: 2s;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+    
+}
 #cards{
+    position: relative;
     .card{
         height: 150px;
         border-radius: 10px;
@@ -20,10 +43,13 @@ $primary: #3292a6;
         .card-body{
            // margin-top: 10px;
            font-family: 'Roboto Condensed',sans-serif;
-           font-size: 20px;
+           .card-title{
+               font-size: 20px !important;
+           }
         }
 
     }
+
     .card:hover{
         background:#ff3115;
         color:#fff;
