@@ -1,6 +1,16 @@
 #principal{
     .card{
         border-radius: 20px;
+        img{
+            margin-left: 100px;
+           margin-top: 20px;
+           border-radius: 20px;
+            height: 400px;
+        }
+        h4{
+            margin-top: 5px;
+            margin-left: 150px;
+        }
         .card-title{
             
             font-family: 'Times New Roman', Times, serif;

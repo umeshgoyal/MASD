@@ -44,7 +44,15 @@
         p{
             font-family: 'Roboto Condensed',sans-serif;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 16px;
+            margin-top: -3%;
+            
+        }
+        #school-logo{
+            p{
+                margin-top: -8%;
+                font-size: 14px;
+            }
         }
         p:hover{
             color: #ff3115;
@@ -52,8 +60,13 @@
         }
     }
     #social{
-        margin-top: -8rem;
+        margin-top: -5rem;
         font-size: 26px;
+       
+    }
+    .social1{
+        color: #fff;
+
     }
     .social1:hover{
         color: #ff3115;

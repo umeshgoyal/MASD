@@ -31,26 +31,31 @@
     }
     #member{
         .card{
+            width: 310px;
             border-radius: 15px;
             img{
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
-                height: 250px;
+                height: 300px;
             }
             .card-title{
+                margin-top: -6% !important;
                 font-family: 'Roboto Condensed',sans-serif;
                 font-weight: bold;
                 font-size: 18px;  
+                margin-bottom: -0.5%;
             }
         }
         .card-footer{
             margin-top: -15px;
+            padding-top: 6px !important;
+            padding-bottom: 6px !important;
             #button-4
             {
                 background: #ff3115;
                 box-sizing: border-box;
-                width: 220px;
-                height: 50px;
+                width: 270px;
+                height: 39px;
                 transition: all 0.5s ease;
                 position: relative;
                 overflow: hidden;
@@ -66,12 +71,12 @@
                     position: relative;
                     //transition: all 0.5s ease;
                     text-decoration: none;
-                    line-height: 45px;
+                    line-height: 37px;
                     display: inline;
                 }
                 .eff-4{
-                    width: 220px;
-                    left: -220px;
+                    width: 270px;
+                    left: -270px;
                     height: 50px;
                     background:#fff;
                     position: absolute;

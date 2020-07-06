@@ -20,6 +20,26 @@ $primary: #3292a6;
             }
         }
     }
+    .carousel-control-next{
+        height: fit-content;
+        //top: 250px;
+        padding-top: 250px;
+       
+        .carousel-control-next-icon{
+            font-size: 30px;
+           
+            width: 30px;
+            height: 30px;
+            
+        }
+    }
+    .carousel-control-prev-icon{
+        font-size: 30px;
+       margin-top: -39% !important;
+        width: 30px;
+        height: 30px;
+        
+    }
     
 }
 #cards{

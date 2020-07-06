@@ -1,13 +1,19 @@
 #logo-bar{
     position: absolute;
-    top: 720px;
+    top: 650px;
     overflow: auto;
-    left: 1250px;
+    left: 87%;
     button{
+        width: 150px;
     color: #fff;
     position: fixed;
     border-radius: 20px;
     background: #ff3115;
    
+    }
+    button:hover{
+        background:#fff ;
+        color:#ff3115 ;
+        border: 2px solid #ff3115;
     }
 }
