@@ -1,4 +1,5 @@
 #footer{
+    overflow: hidden;
     position: relative;
     #address, #phone, #email{
         margin-top: 10px;
@@ -72,10 +73,13 @@
         color: #ff3115;
     }
 }
-@media(max-width:420px){
+@media(max-width:380px){
     #footer{
        
         background: url(/assets/img/crowd.jpg);
+        .col-sm-6{
+            width: fit-content !important;
+        }
         p:hover{
             color: #ff3115;
         }
@@ -84,6 +88,7 @@
         }
         
         .card{
+            margin-top: -211% !important;
             height: 300px;
             h4{
                 font-size: 12px;
@@ -118,8 +123,71 @@
                 h3{
                     font-size: 16px !important;
                 }
-                p{
-                    display: none;
+            }
+            img{
+                height: 50px !important;
+                width: 50px !important;
+            }
+            h2{
+                margin-top: 2px !important;
+                font-size: 18px !important;
+                margin-bottom: 5px !important;
+            }
+            p{
+                font-size: 12px !important;
+            }
+        }
+    }
+}
+@media(min-width:381px) and (max-width:420px){
+    #footer{
+       
+        background: url(/assets/img/crowd.jpg);
+        .col-sm-6{
+            width: fit-content !important;
+        }
+        p:hover{
+            color: #ff3115;
+        }
+        .social1:hover{
+            color: #ff3115;
+        }
+        
+        .card{
+            margin-top: -179% !important;
+            height: 300px;
+            h4{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px;
+            }
+            .v1{
+                margin-left: 0px !important;
+                border-right: 0px solid #fff !important;
+                margin-top: 1px !important;
+                height: 0px !important;
+                border-radius: 2px; 
+            }
+            .v2{
+                margin-left: 0px !important;
+                border-right: 0px solid #fff !important;
+                margin-top: 1px !important;
+                height:0px !important;
+                border-radius: 2px;
+            }
+            h3{
+                font-size: 12px !important;
+            }
+            .fas{
+                font-size: 14px !important;
+            }
+        }#detail{
+            
+            margin-top: -4rem;
+            #school-logo{
+                h3{
+                    font-size: 16px !important;
                 }
             }
             img{

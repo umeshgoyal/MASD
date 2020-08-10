@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MealChartComponent implements OnInit {
 
+  currentYear:number=new Date().getFullYear();
+  nxtYear:number=new Date().getFullYear()+1;
   constructor() { }
 
   ngOnInit(): void {

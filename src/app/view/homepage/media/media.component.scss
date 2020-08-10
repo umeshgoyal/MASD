@@ -70,3 +70,34 @@
     }
 
 }
+@media(max-width:320px){
+    #gallery{
+        .col-sm-12{
+            text-align: center !important;
+        }
+        #view-all{
+            margin-left: 7% !important;
+        }
+    }
+}
+@media(min-width:321px) and (max-width:380px){
+    #gallery{
+        .col-sm-12{
+            text-align: center !important;
+        }
+        #view-all{
+            margin-left: 11% !important;
+        }
+    }
+}
+@media(min-width:381px) and (max-width:420px){
+    #gallery{
+        .col-sm-12{
+            text-align: center !important;
+        }
+        #view-all{
+            margin-left: 16% !important;
+        }
+    }
+      
+}

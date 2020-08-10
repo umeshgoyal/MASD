@@ -20,6 +20,7 @@ import { MediaComponent } from './view/homepage/media/media.component';
 import { TestimonialComponent } from './view/homepage/testimonial/testimonial.component';
 import { GalleryComponent } from './view/gallery/gallery.component';
 import { BookComponent } from './view/book/book.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { BookComponent } from './view/book/book.component';
     FacilityModule,
     AcademicModule,
     StudentModule,
-    CalendarModule
+    CalendarModule,
+    HttpClientModule
     
   ],
   providers: [],

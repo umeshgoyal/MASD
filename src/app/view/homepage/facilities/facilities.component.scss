@@ -3,6 +3,7 @@ $primary: #3292a6;
     position: relative;
     margin-bottom: 100px;
     margin-top: 60px;
+    overflow: hidden;
     h2{
         font-weight: bold;
         font-family: 'Roboto Condensed',sans-serif;
@@ -13,6 +14,7 @@ $primary: #3292a6;
         border-radius: 5px;
     }
     .card{
+        
         height: 550px;
         border-radius: 10px;
        
@@ -63,29 +65,36 @@ $primary: #3292a6;
         }
     }
 }
-@media(max-width:380px){
-    .card{
-        max-height:500px !important ;
-        .card-body{
-            h3{
-                font-size: 12px;
+@media(max-width:420px){
+    #facilities{
+        .card{
+            max-height:115px !important ;
+            .card-body{
+                h3{
+                    font-size: 9px;
+                }
             }
-            p{
-                font-size: 10px !important;
+            
+        }
+        .carousel-control-prev{
+            margin-left: -9px !important;
+            span{
+                border-radius: 5px !important;
+                background-color:#ff3115 !important;
+                width:25px !important;
+                height: 25px !important;
+            }
+        }
+        .carousel-control-next{
+            margin-right: -9px !important;
+            span{
+                border-radius: 5px !important;
+                background-color:#ff3115 !important;
+                width:25px !important;
+                height: 25px !important;
             }
         }
     }
-}
-@media(min-width:381px) and (max-width:420px){
-    .card{
-        max-height:500px !important ;
-        .card-body{
-            h3{
-                font-size: 12px;
-            }
-            p{
-                font-size: 10px !important;
-            }
-        }
-    } 
+    
+   
 }

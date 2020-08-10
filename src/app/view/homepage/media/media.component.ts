@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
 
 declare var $:any;
 
@@ -8,11 +9,13 @@ declare var $:any;
   styleUrls: ['./media.component.scss']
 })
 export class MediaComponent implements OnInit {
-
-  constructor() { }
+  result='';
+  constructor(private api:ApiService) { }
 
   ngOnInit(): void {
-  
+    // this.api.fetchGallery().subscribe((response)=>{
+    //   console.log(response);
+    // });
   }
   
 }

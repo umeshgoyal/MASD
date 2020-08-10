@@ -2,16 +2,16 @@
 
 <div id="topBar" style="background: #111111; ">
     <nav class="navbar navbar  text-light fixed-top" style="background-color: #111111;">
-        <div class="container">
-            <div id="school">
+        <div class="container" >
+            <div id="school" class="col-sm-12">
                 <span id="university"><i class="fas fa-university" style="color: red;"></i> Welcome To MASD Public School</span>
             </div>
-            <div class="ml-auto" id="social-media">
+            <div class="ml-auto col-sm-6" id="social-media">
                 
                 <a class="mr-3 social" href="https://www.facebook.com/masdschool" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 <a class="mr-4 social" href="https://www.youtube.com/channel/UCYFkugTM5lsQSVOyzmEkkVw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
-            <p class=" my-auto" style="color: #ff3115 !important;font-weight: bold;">Apply Online</p>
+            <p class=" my-auto col-sm-6" style="color: #ff3115 !important;font-weight: bold;">Apply Online</p>
         </div>
     </nav>
 </div>
@@ -21,7 +21,7 @@
 <div id="info-header" class="bg-light">
     <nav class="navbar navbar-light text-dark">
         <div class="conatiner">
-            <div id="mail">
+            <div id="mail" class="col-sm-12">
                 <div class="d-flex row">
                     <div class="col-log-4 col-md-4 col-sm-4 col-xs-4" id="mail-logo">
                         <span class="ml-2 my-auto flaticon-email"></span>
@@ -32,11 +32,11 @@
                 </div>
                 </div>
             </div>
-            <div id="school">
+            <div id="school" class="col-sm-12">
                 <img src="/assets/img/School_Logo.png" alt="School" class="img-responsive">
                 <p>MASD Public School</p>
             </div>
-            <div id="contact">
+            <div id="contact" class="col-sm-12">
                 <div class="d-flex row">
                     <div class="col-log-4 col-md-4 col-sm-4 col-xs-4" id="phone-logo">
                         <span class="ml-2 my-auto flaticon-call"></span>
@@ -60,7 +60,7 @@
             data-target="#menuNav">
             <span class="navbar-toggler-icon text-white"><i class="fas fa-bars"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="menuNav">
+        <div class="collapse navbar-collapse" id="menuNav" style="overflow: hidden;">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
                     <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
