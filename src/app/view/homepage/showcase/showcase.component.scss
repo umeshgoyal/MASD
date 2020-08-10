@@ -1,6 +1,5 @@
 $primary: #3292a6;
 #slide1{
-    overflow: hidden;
     position: relative;
     .carousel-item{
         img{
@@ -108,7 +107,7 @@ $primary: #3292a6;
         }
     }
 }
-@media(min-width:381px) and (max-width:420px){
+@media(max-width:420px){
 
     #cards{
         .card{
