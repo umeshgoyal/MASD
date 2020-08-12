@@ -60,3 +60,15 @@
         }
     }
 }
+@media(min-width:771px) and (max-width:991px){
+    #auditorMessage{
+        .card{
+            img{
+                margin-left: 20px !important;
+            }
+            h4{
+                margin-left: 50px !important;
+            }
+        }
+    }
+}

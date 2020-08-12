@@ -118,3 +118,10 @@ $primary: #3292a6;
         
     }  
 }
+@media(min-width:770px) and (max-width:991px){
+    #cards{
+        .card{
+            height: 125px !important;
+        }
+    }
+}

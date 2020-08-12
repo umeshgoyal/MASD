@@ -13,7 +13,7 @@
                 border-radius: 10px;
             }
             p{
-                margin-left: -50px !important;
+                margin-left: -50px ;
                 font-size: 24px;
             }
             #chem-img{
@@ -42,6 +42,16 @@
         }
         .card-body{
             margin-left: 40px !important;
+        }
+    }
+}
+@media(min-width:770px) and (max-width:991px){
+    #chemistry{
+        .card{
+            p{
+                margin-left: -15px !important;
+                font-size: 17px !important;
+            }
         }
     }
 }

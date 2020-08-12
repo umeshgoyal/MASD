@@ -38,3 +38,21 @@
         margin-top: 20px;
     }
 }
+@media(min-width:770px) and (max-width:991px){
+    #student{
+        hr{
+            margin-left: 47px !important;
+        }
+        #student-type{
+            .card-body{
+                margin-left: 10px !important;
+                p{
+                    font-size: 16px !important;
+                }
+                p:hover{
+                    margin-left: 0px !important;
+                }
+            }
+        }
+    }
+}

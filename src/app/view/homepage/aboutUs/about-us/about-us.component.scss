@@ -456,3 +456,26 @@
         }
     }
 }
+@media(min-width:770px) and (max-width:991px){
+    #about{
+        img{
+            height: 250px !important;
+        }
+        #news-calender{
+            width: 108% !important;
+        }
+        #member{
+            .card{
+                width: 220px !important;
+                #button-4{
+                    width: 180px !important;
+                }
+                .eff-4{
+                    width: 180px !important;
+                    left: -180px !important;
+                }
+            }
+
+        }
+    }
+}
