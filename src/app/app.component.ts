@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import 'rxjs/add/observable/timer';
+declare var $:any;
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ export class AppComponent implements OnInit,OnDestroy {
   sub:Subscription;
 ngOnInit(){
   this.setTimer();
+  
 }
 
 onActivate(event) {

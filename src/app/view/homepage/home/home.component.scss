@@ -1,9 +1,10 @@
 #logo-bar{
+    height: 100vh;
     position: absolute;
-    top: 650px;
+    top: 70% !important;
     overflow: auto;
     left: 87%;
-    button{
+   a{
         width: 150px;
     color: #fff;
     position: fixed;
@@ -11,7 +12,7 @@
     background: #ff3115;
    
     }
-    button:hover{
+   a:hover{
         background:#fff ;
         color:#ff3115 ;
         border: 2px solid #ff3115;

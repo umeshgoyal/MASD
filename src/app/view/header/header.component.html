@@ -145,13 +145,13 @@
                     routerLink="/gallery">Gallery</a>
                 </li>
                
-                <li class="nav-item" routerLinkActive="active">
+                <li class="nav-item" >
                     <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
-                    routerLink="/">ERP-Login</a>
+                    (click)="openERPLogin()">ERP-Login</a>
                 </li>
                 <li class="nav-item" >
                     <a class="nav-link" data-toggle="collapse" data-target="#menuNav"
-                    routerLink="/">Parent's Login</a>
+                    (click)="openParentLogin()" >Parent's Login</a>
                 </li>
             </ul>
         </div>

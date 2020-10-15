@@ -33,6 +33,12 @@ export class HeaderComponent implements OnInit {
     });
     
   }
+  openParentLogin(){
+    window.open('http://masd.eskoool.com/studentlogin.aspx','_blank');
+  }
+  openERPLogin(){
+    window.open('http://masd.eskoool.com/','_blank');
+  }
   
 
 }
