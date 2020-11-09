@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "http://masd.eskoool.com/webservice.asmx/GetBirthdayList",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": "http://localhost:4200/"
+      }
+    }
+  }

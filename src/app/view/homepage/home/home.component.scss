@@ -18,3 +18,9 @@
         border: 2px solid #ff3115;
     }
 }
+
+@media(max-width:600px){
+    #logo-bar{
+        left: 50% !important;
+    }
+}
