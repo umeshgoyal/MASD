@@ -4,11 +4,13 @@
         img{
             margin-left: 100px;
            margin-top: 20px;
-           border-radius: 20px;   
+           border-radius: 20px;  
+           width: 350px;
+           height: 350px; 
         }
         h4{
             margin-top: 5px;
-            margin-left: 130px;
+            margin-left: 200px;
         }
         .card-title{
             
@@ -64,7 +66,7 @@
     #auditorMessage{
         .card{
             img{
-                margin-left: 20px !important;
+                margin-left: 0px !important;
             }
             h4{
                 margin-left: 50px !important;
