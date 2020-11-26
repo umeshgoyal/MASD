@@ -14,5 +14,10 @@ export class FooterComponent implements OnInit {
   }
   toHomework(){
     this.router.navigate(['/student/summer']);
+    window.scrollTo(0,0);
+  }
+  toSyllabus(){
+    this.router.navigate(['/student/syllabus']);
+    window.scrollTo(0,0);
   }
 }
