@@ -11,7 +11,9 @@ const appRoute:Route[]=[
     {path:'facility',loadChildren:'./modules/facility.module#FacilityModule'},
     {path:'academic',loadChildren:'./modules/academic.module#AcademicModule'},
     {path:'student',loadChildren:'./modules/student.module#StudentModule'},
+    {path:'link',loadChildren:'./modules/link.module#LinkModule'},
     {path:'gallery',component:GalleryComponent}
+    
 ];
 
 @NgModule({

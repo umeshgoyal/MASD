@@ -1,0 +1,33 @@
+#link{
+    margin-bottom: 150px;
+    #school-image{
+        background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url(/assets/img/about-school.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 200px;
+        
+        img{
+            border-radius: 5px;
+            height: 200px;
+        
+        }
+    }
+    hr{
+        border-radius: 10px;
+        margin-top: -10px;
+        margin-left: 80px;
+    }
+    #link-type{
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        
+    }
+   
+}
+@media(min-width:770px) and (max-width:991px){
+    #link{
+        hr{
+            margin-left: 47px !important;
+        }
+    }
+}

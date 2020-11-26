@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './view/header/header.component';
 import { ShowcaseComponent } from './view/homepage/showcase/showcase.component';
@@ -21,6 +22,7 @@ import { TestimonialComponent } from './view/homepage/testimonial/testimonial.co
 import { GalleryComponent } from './view/gallery/gallery.component';
 import { BookComponent } from './view/book/book.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LinkModule } from './modules/link.module';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { HttpClientModule } from '@angular/common/http';
     AcademicModule,
     StudentModule,
     CalendarModule,
-    HttpClientModule
+    HttpClientModule,
+    LinkModule,
+    BrowserAnimationsModule
     
   ],
   providers: [],
