@@ -1,15 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
+import {Birthday} from 'src/app/models/birthday.model';
+import { AboutService } from 'src/app/services/about.service';
+import { News } from 'src/app/models/news.model';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss']
 })
-export class AboutUsComponent implements OnInit {
+export class AboutUsComponent implements OnInit,OnDestroy {
 
-  constructor() { }
+  constructor(private aboutService:AboutService) { }
+  birthdays:Birthday[]=this.aboutService.getBirthday();
+  news:News[]=[];
 
+  private subs:Subscription[]=[];
   ngOnInit(): void {
+    this.subs.push(this.aboutService.birthdayChanged.subscribe(birthday=>{
+      this.birthdays=birthday;
+    }));
+    this.birthdays=this.aboutService.getBirthday();
+    this.news=this.aboutService.getNews();
+    this.subs.push(this.aboutService.newChanged.subscribe(news=>{
+      this.news=news;
+    }));
 
   }
 
@@ -58,4 +74,7 @@ export class AboutUsComponent implements OnInit {
 // }
 
 //   }
+ngOnDestroy(){
+  this.subs.forEach(s=>s.unsubscribe());
+}
 }

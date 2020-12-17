@@ -81,15 +81,16 @@
                         <h3>News & Update</h3>
                         <hr>
                         <div class="movingText">
-                            <div class="card ">
-                                
+                            <div class="card " >
+                                <div class="row" *ngFor="let new of news;let i=index">
                                 <div class="card-body">
-                                    <h5>14-April-2020</h5>
-                                    <p style="font-size: 18px;">Ambedkar Jayanti</p>
-                                    <p>Description</p>
+                                    <h5>{{new.Date}}</h5>
+                                    <p class="mb-0" style="font-size: 18px;">{{new.title}}</p>
+                                    <p class="mb-0 mt-0 mr-1" style="color: #28B463 ;">{{new.description}}</p>
                                     <a class="text-warning">Download</a>
                                     <hr>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -103,22 +104,24 @@
                     <div id="birthday">
                         <h3>Today's Birthday</h3>
                         <hr>
-                        <div class="movingText">
-                            <div class="card">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <img src="/assets/img/testimonial/test1.jpeg" alt="person1" class="img-fluid rounded-circle">
+                        <div class="movingText" >
+                            <div class="row">
+                            <div class="card"  >
+                                <div class="row mb-2" *ngFor="let birthday of birthdays;let i=index">
+                                    <div class="col-lg-4 col-md-4 col-sm-4" style="border: 1px solid  #ff3115;border-right: 0px;left: 13px;height: 100px;border-radius: 5px;">
+                                        <img src="/assets/img/profile.png" alt="person1" class="img-fluid rounded-circle">
                                     </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-8 name">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 name" style="border: 1px solid  #ff3115;border-left: 0px;height: 100px;border-radius: 5px;">
                                         <div class="card-body">
-                                            <h5>Name</h5>
-                                            <p>class</p>
+                                            <h5>Name:{{birthday.StudentName}}</h5>
+                                            <p>class: {{birthday.CourseName}}</p>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>

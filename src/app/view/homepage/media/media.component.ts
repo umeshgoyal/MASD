@@ -13,9 +13,7 @@ export class MediaComponent implements OnInit {
   constructor(private api:ApiService) { }
 
   ngOnInit(): void {
-    this.api.fetchGallery().subscribe((response)=>{
-      console.log(response);
-    });
+    
   }
   
 }
