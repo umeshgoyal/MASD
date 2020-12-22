@@ -99,11 +99,13 @@
 }
 
 #menu-header{
+    z-index: 200;
     width: 100%;
     background: #212121;
     nav{
         background-color: #212121;
         line-height: 26px;
+        z-index: 200;
     }
     a{
         color: #bbbbbb;
