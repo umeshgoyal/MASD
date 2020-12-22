@@ -150,10 +150,12 @@
                 -webkit-animation: movingText 25s linear infinite;
                 animation: movingText 25s linear infinite;
             }
-            .card:hover{
+           .card:hover{
+                
                 -moz-animation: movingText 30s linear infinite;
                 -webkit-animation: movingText 30s linear infinite;
                 animation: movingText 30s linear infinite;
+                
                 
             }
             .card hr{

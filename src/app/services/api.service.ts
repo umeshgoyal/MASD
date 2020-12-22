@@ -11,13 +11,13 @@ export class ApiService {
   constructor(private http:HttpClient,private aboutService:AboutService) { }
 
   fetchBirthday(){
-    return this.http.get<Birthday[]>('http://masd.eskoool.com/webservice.asmx/GetBirthdayList?schoolid=1').subscribe((birthday)=>{
+    return this.http.get<Birthday[]>('https://masd.eskoool.com/webservice.asmx/GetBirthdayList?schoolid=1').subscribe((birthday)=>{
     this.aboutService.setBirthday(birthday);
     });
   }
 
   fetchNews(){
-    return this.http.get<News[]>('http://masd.eskoool.com/webservice.asmx/GetEventNews?strschoolid=1&strtype=news').subscribe((news)=>{
+    return this.http.get<News[]>('https://masd.eskoool.com/webservice.asmx/GetEventNews?strschoolid=1&strtype=news').subscribe((news)=>{
       this.aboutService.setNews(news);
       });
   }
