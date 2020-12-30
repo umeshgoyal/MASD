@@ -23,6 +23,7 @@ import { GalleryComponent } from './view/gallery/gallery.component';
 import { BookComponent } from './view/book/book.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LinkModule } from './modules/link.module';
+import { MarqueeDirectiveDirective } from './directive/marquee-directive.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { LinkModule } from './modules/link.module';
     MediaComponent,
     TestimonialComponent,
     GalleryComponent,
-    BookComponent
+    BookComponent,
+    MarqueeDirectiveDirective
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/services/api.service';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import {Birthday} from 'src/app/models/birthday.model';
 import { AboutService } from 'src/app/services/about.service';
 import { News } from 'src/app/models/news.model';
 import { Subscription } from 'rxjs';
+declare var $:any;
 
 @Component({
   selector: 'app-about-us',
@@ -11,6 +11,8 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit,OnDestroy {
+@ViewChild('myNews',{static:false}) myNews:ElementRef;
+  
 
   constructor(private aboutService:AboutService) { }
   birthdays:Birthday[]=this.aboutService.getBirthday();
@@ -26,9 +28,9 @@ export class AboutUsComponent implements OnInit,OnDestroy {
     this.subs.push(this.aboutService.newChanged.subscribe(news=>{
       this.news=news;
     }));
-
+   
   }
-
+  
 //   customDates(args){
 //     if (args.date.getDay() === 0 || args.date.getDay() === 6) {
 //       //set 'true' to disable the weekends

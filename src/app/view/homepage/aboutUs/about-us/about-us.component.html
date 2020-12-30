@@ -81,13 +81,13 @@
                         <h3>News & Update</h3>
                         <hr>
                         <div class="row" >
-                            <marquee behavior="scroll" direction="up" scrollamount="6"  onmouseover="this.stop();" onmouseout="this.start();" >
-                                <div class="row" *ngFor="let new of news;let i=index" style="margin-bottom: 10px;">
+                            <marquee behavior="scroll" direction="up" scrollamount="6"  appMarqueeDirective #myNews *ngFor="let new of news;let i=index">
+                                <div class="row"  style="margin-bottom: 10px;" *ngFor="let new of news;let i=index" >
                                     <p style="width: 100%;font-size: 1.5vw;">{{new.Date}}</p>
                                     <p style="width: 100%;">{{new.title}}</p>
                                     <br>
                                     <p style="color: #28B463 ;width: 100%;" >{{new.description}}</p>
-                                    <a href="https://drive.google.com/file/d/1o542fvrnIrI9oC5MvsTHEzPTtlKZ3TYR/view?usp=sharing" class="text-warning" style="width: 100%;"  download>Download</a>
+                                    <a href="https://drive.google.com/file/d/1o542fvrnIrI9oC5MvsTHEzPTtlKZ3TYR/view?usp=sharing" class="text-warning" style="width: 100%;"  target="_blank" download>Download</a>
                                     <hr class="pb-1 bg-danger" style="width: 100%;">
                                 </div>
                                 
