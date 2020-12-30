@@ -80,7 +80,23 @@
                     <div class="border" id="news">
                         <h3>News & Update</h3>
                         <hr>
-                        <div class="movingText">
+                        <div class="row" >
+                            <marquee behavior="scroll" direction="up" scrollamount="6"  onmouseover="this.stop();" onmouseout="this.start();" >
+                                <div class="row" *ngFor="let new of news;let i=index" style="margin-bottom: 10px;">
+                                    <p style="width: 100%;font-size: 1.5vw;">{{new.Date}}</p>
+                                    <p style="width: 100%;">{{new.title}}</p>
+                                    <br>
+                                    <p style="color: #28B463 ;width: 100%;" >{{new.description}}</p>
+                                    <a href="https://drive.google.com/file/d/1o542fvrnIrI9oC5MvsTHEzPTtlKZ3TYR/view?usp=sharing" class="text-warning" style="width: 100%;"  download>Download</a>
+                                    <hr class="pb-1 bg-danger" style="width: 100%;">
+                                </div>
+                                
+                                </marquee>
+                            <!-- <marquee behavior="scroll" direction="up" scrollamount="1">{{new.title}}</marquee>
+                            <marquee behavior="scroll" direction="up" scrollamount="1" style="color: #28B463 ;">{{new.description}}</marquee>
+                            <marquee behavior="scroll" direction="up" scrollamount="1" class="text-warning"><a href="">Download</a></marquee> -->
+                        </div>
+                        <!-- <div class="movingText">
                             <div class="card " >
                                 <div class="row" *ngFor="let new of news;let i=index">
                                 <div class="card-body">
@@ -92,7 +108,7 @@
                                 </div>
                             </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12" >
