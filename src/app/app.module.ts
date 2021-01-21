@@ -24,6 +24,7 @@ import { BookComponent } from './view/book/book.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LinkModule } from './modules/link.module';
 import { MarqueeDirectiveDirective } from './directive/marquee-directive.directive';
+import { RegistrationComponent } from './view/shared/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MarqueeDirectiveDirective } from './directive/marquee-directive.directi
     TestimonialComponent,
     GalleryComponent,
     BookComponent,
-    MarqueeDirectiveDirective
+    MarqueeDirectiveDirective,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

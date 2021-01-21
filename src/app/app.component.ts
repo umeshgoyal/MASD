@@ -14,6 +14,7 @@ export class AppComponent implements OnInit,OnDestroy {
   sub:Subscription;
 ngOnInit(){
   this.setTimer();
+  this.openModal();
   
 }
 
@@ -30,6 +31,15 @@ setTimer(){
     this.showBook=false;
     
   });
+}
+
+openModal(){
+  $(document).ready(function(){
+    if(window.innerWidth>=576){
+      $("#myModal").modal('show');
+    }
+		
+	});
 }
 ngOnDestroy(){
   this.sub.unsubscribe();
