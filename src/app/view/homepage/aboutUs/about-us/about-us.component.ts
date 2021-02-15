@@ -17,6 +17,7 @@ export class AboutUsComponent implements OnInit,OnDestroy {
   constructor(private aboutService:AboutService) { }
   birthdays:Birthday[]=this.aboutService.getBirthday();
   news:News[]=[];
+  newsUrl:string[]=['https://drive.google.com/file/d/1o542fvrnIrI9oC5MvsTHEzPTtlKZ3TYR/view?usp=sharing','https://drive.google.com/file/d/1LqfB-UQNvtmlu2Pte3QrqFAH1Tk6peY5/view?usp=sharing'];
 
   private subs:Subscription[]=[];
   ngOnInit(): void {
