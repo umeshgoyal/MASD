@@ -76,54 +76,45 @@
         <!-- Calender & News Update -->
         <div id="news-calender">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12" >
-                    <div class="border" id="news">
-                        <h3>News & Update</h3>
-                        <hr>
-                        <div class="row" >
-                            <marquee behavior="scroll" direction="up" scrollamount="6"  appMarqueeDirective #myNews *ngFor="let new of news;let i=index">
-                                <div class="row"  style="margin-bottom: 10px;" *ngFor="let new of news;let i=index" >
-                                    <p style="width: 100%;font-size: 1.5vw;">{{new.Date}}</p>
-                                    <p style="width: 100%;">{{new.title}}</p>
-                                    <br>
-                                    <p style="color: #28B463 ;width: 100%;" >{{new.description}}</p>
-                                    <a href="{{newsUrl[i]}}" class="text-warning" style="width: 100%;"  target="_blank" download>Download</a>
-                                    <hr class="pb-1 bg-danger" style="width: 100%;">
-                                </div>
-                                
+                <div class="col-12 col-md-6 about-img">
+                    <div class="event">
+                        <h2 class="font-weight-bold">IMPORTANT NOTICES</h2>
+                        <hr class=" p-1" style="width: 320px;">
+                        <div class="event-data">
+                            <div class="row">
+                                <marquee behavior="scroll" direction="up" scrollamount="2" >
+                                    <div class="row mb-3" *ngFor="let new of news;let i=index">
+                                        <div class="col-3 mt-0 date text-center d-flex flex-column ">
+                                           <div style="font-size: 23px;">{{new.Date}}</div>
+                                        </div>
+                                        <div class="col-9 pl-0">
+                                            <div class="detail w-75">
+                                                {{new.title}} <br>
+                                                <a class="colorHover" href="{{new.imgPath}}" target="_blank" download>Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
                                 </marquee>
-                            <!-- <marquee behavior="scroll" direction="up" scrollamount="1">{{new.title}}</marquee>
-                            <marquee behavior="scroll" direction="up" scrollamount="1" style="color: #28B463 ;">{{new.description}}</marquee>
-                            <marquee behavior="scroll" direction="up" scrollamount="1" class="text-warning"><a href="">Download</a></marquee> -->
+                            </div>
                         </div>
-                        <!-- <div class="movingText">
-                            <div class="card " >
-                                <div class="row" *ngFor="let new of news;let i=index">
-                                <div class="card-body">
-                                    <h5>{{new.Date}}</h5>
-                                    <p class="mb-0" style="font-size: 18px;">{{new.title}}</p>
-                                    <p class="mb-0 mt-0 mr-1" style="color: #28B463 ;">{{new.description}}</p>
-                                    <a class="text-warning">Download</a>
-                                    <hr>
-                                </div>
-                            </div>
-                            </div>
-                        </div> -->
                     </div>
+                   
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12" >
+              
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12" >
                     <div id="calender">
                         <ejs-calendar ></ejs-calendar>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12" >
+                </div> -->
+                <div class="col-lg-6 col-md-6 col-sm-12" >
                     <div id="birthday">
-                        <h3>Today's Birthday</h3>
-                        <hr>
+                        <h2 class="font-weight-bold text-dark text-center">Today's Birthday</h2>
+                        <hr class=" p-1" style="width: 320px;">
                         <div class="movingText" >
-                            <div class="row">
+                            <div class="row mx-auto">
                             <div class="card"  >
-                                <div class="row mb-2" *ngFor="let birthday of birthdays;let i=index">
+                                <div class="row mb-2 mx-auto w-75" *ngFor="let birthday of birthdays;let i=index">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="border: 1px solid  #ff3115;border-right: 0px;left: 13px;height: 100px;border-radius: 5px;">
                                         <img src="/assets/img/profile.png" alt="person1" class="img-fluid rounded-circle">
                                     </div>

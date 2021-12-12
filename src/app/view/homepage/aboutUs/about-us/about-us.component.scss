@@ -180,35 +180,39 @@
                 font-size: 14px;
             }
             /* Move it (define the animation) */
-            @-moz-keyframes movingText {
-                0%   { -moz-transform: translateY(100%); }
-                100% { -moz-transform: translateY(-100%); }
-            }
-            @-webkit-keyframes movingText {
-                0%   { -webkit-transform: translateY(100%); }
-                100% { -webkit-transform: translateY(-100%); }
-            }
-            @keyframes movingText {
-                0%   { 
-                    -moz-transform: translateY(100%); /* Firefox bug fix */
-                    -webkit-transform: translateY(100%); /* Firefox bug fix */
-                    transform: translateY(100%);       
-                }
-                100% { 
-                    -moz-transform: translateY(-100%); /* Firefox bug fix */
-                    -webkit-transform: translateY(-100%); /* Firefox bug fix */
-                    transform: translateY(-100%); 
-                }
-            }
+            // @-moz-keyframes movingText {
+            //     0%   { -moz-transform: translateY(100%); }
+            //     100% { -moz-transform: translateY(-100%); }
+            // }
+            // @-webkit-keyframes movingText {
+            //     0%   { -webkit-transform: translateY(100%); }
+            //     100% { -webkit-transform: translateY(-100%); }
+            // }
+            // @keyframes movingText {
+            //     0%   { 
+            //         -moz-transform: translateY(100%); /* Firefox bug fix */
+            //         -webkit-transform: translateY(100%); /* Firefox bug fix */
+            //         transform: translateY(100%);       
+            //     }
+            //     100% { 
+            //         -moz-transform: translateY(-100%); /* Firefox bug fix */
+            //         -webkit-transform: translateY(-100%); /* Firefox bug fix */
+            //         transform: translateY(-100%); 
+            //     }
+            // }
     
         }
         #birthday{
             background: #fff;
             border-radius: 20px;
             color: #ff3115;
-            height: 300px;
-            border: 1px solid #ff3115 !important;
+            height: 400px;
+            //border: 1px solid #ff3115 !important;
             overflow-y: hidden;
+            hr{
+                border-radius: 5px;
+                background-color: #ff3115;
+            }
             h3{
                 font-family: 'Roboto Condensed',sans-serif;
                 font-weight: bold;
@@ -218,10 +222,10 @@
                 text-align: center;
             }
             .movingText {
-                height: 50px;  
+                height: 100px;  
                 overflow: hidden;
                 position: relative;
-                height: 200px;
+                height: 350px;
                 
             }
             .movingText .card {
@@ -230,11 +234,11 @@
                 //border: 1px solid #ff3115;
                 height: 100px;
                 background: #fff;
-                margin-left: 40px !important;
-                margin-right: 10px;
+                // margin-left: auto;
+                // margin-right: auto;
                 color: #ff3115;
                 position: absolute;
-                width: 80%;
+                width: 100%;
                 margin: 0;
                 //border: 1px solid solid;
                 line-height: 50px;
@@ -243,9 +247,9 @@
                 -webkit-transform:translateY(100%);    
                 transform:translateX(100%);
                 /* Apply animation to this element */  
-                -moz-animation: movingText 15s linear infinite;
-                -webkit-animation: movingText 15s linear infinite;
-                animation: movingText 15s linear infinite;
+                -moz-animation: movingText 10s linear infinite;
+                -webkit-animation: movingText 10s linear infinite;
+                animation: movingText 10s linear infinite;
             }
             
             .card:hover{
@@ -298,6 +302,62 @@
         }
     }
     
+}
+.about-img{
+    position: relative;
+    //padding-top: 30px;
+    padding-bottom: 20px;
+    .event{
+        hr{
+            border-radius: 5px;
+            background-color: #ff3115;
+            margin-left: 0;
+        }
+        .event-data{
+            
+            .row{
+                marquee{
+                    height: 300px;
+                    .row{
+                        .date{
+                            justify-content: center;
+                            height: 100px;
+                            color: #fff;
+                            background: #ff3115;
+                            span{
+                                
+                            }
+                        }
+                        .detail{
+                            padding-top: 10px;
+                            height: 100px;
+                            background:#bbb;
+                            font-weight: 500;
+                            font-size: 16px;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //background: var(--purple-dark);
+    // .card{
+    //     position: absolute;
+    //     right: 45%;
+    //     top: 25%;
+    //     width: 400px;
+    // }
+    // img{
+    //     position: absolute;
+    //     right: 45%;
+    //     top: 25%;
+        
+    // }
+    // img:hover{
+    //     transform: scale(1.1);
+    //     filter: brightness(0.8);
+    // }
 }
 // #calender{
 //     margin-top: 40px;
@@ -442,18 +502,18 @@
     font-style: normal !important;
 }
 
-@media(max-width:380px){
-    #about{
-        img{
-            height: 250px !important;
-        }
-    }
-}
+
 @media(max-width:420px){
     #about{
         #news-calender{
             #news{
                 margin-bottom: 50px !important;
+            }
+        }
+        .about-img{
+            left: 12.5%;
+            hr{
+                width: 220px !important;
             }
         }
         #birthday{
@@ -469,10 +529,32 @@
                 width: 90px !important;
             }
             .name{
-                width: 220px !important;
+                width: 195px !important;
             }
         }
     }
+}
+@media(max-width:406px){
+    #about{
+        img{
+            height: 250px !important;
+        }
+        #birthday{
+            .col-xs-4{
+                width: 86px !important;
+            }
+            .name{
+                width: 166px !important;
+            }
+        }
+
+    }
+}
+@media(max-width:758px){
+    .about-img{
+        left: 12.5%;
+    }
+
 }
 @media(min-width:770px) and (max-width:991px){
     #about{

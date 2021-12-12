@@ -8,6 +8,9 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AcademicRoutingModule } from './academic-routing.module';
 
+import { LoaderModule } from './loader/loader.module';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 @NgModule({
     declarations:[
 
@@ -20,7 +23,9 @@ import { AcademicRoutingModule } from './academic-routing.module';
     imports:[
         RouterModule,
         CommonModule,
-        AcademicRoutingModule
+        AcademicRoutingModule,
+        PdfViewerModule,
+        LoaderModule
     ]
 })
 export class AcademicModule{}

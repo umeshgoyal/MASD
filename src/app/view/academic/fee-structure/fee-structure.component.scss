@@ -8,4 +8,41 @@
             margin-top: 20px;
         }
     }
+    #list-view{
+        zoom: 1.2;
+    }
+}
+
+@media(max-width:1200px) and (min-width:992px){
+    #fee{
+        #list-view{
+            zoom: 1 !important;
+        }
+    }
+    
+}
+@media(max-width:991px) and (min-width:769px){
+    #fee{
+        #list-view{
+            zoom: 0.8 !important;
+        }
+    }
+    
+}
+@media(max-width:768px) and (min-width:476px){
+    #fee{
+        #list-view{
+            zoom: 0.6 !important;
+        }
+    }
+    
+}
+
+@media(max-width:475px){
+    #fee{
+        #list-view{
+            zoom: 0.5 !important;
+        }
+    }
+    
 }

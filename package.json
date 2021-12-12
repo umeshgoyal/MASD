@@ -28,7 +28,7 @@
     "jquery": "^3.5.1",
     "jquery.counterup": "^2.1.0",
     "lightbox2": "^2.11.1",
-    "ng2-pdf-viewer": "^6.3.0",
+    "ng2-pdf-viewer": "^6.4.1",
     "roboto-fontface": "^0.10.0",
     "rxjs": "~6.5.4",
     "screenfull": "^3.3.0",

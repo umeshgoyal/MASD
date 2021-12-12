@@ -27,7 +27,8 @@ export class AboutUsComponent implements OnInit,OnDestroy {
     this.birthdays=this.aboutService.getBirthday();
     this.news=this.aboutService.getNews();
     this.subs.push(this.aboutService.newChanged.subscribe(news=>{
-      this.news=news;
+      this.news=news.reverse();
+      
     }));
    
   }

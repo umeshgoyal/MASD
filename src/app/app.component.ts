@@ -26,7 +26,7 @@ onActivate(event) {
 }
 setTimer(){
   this.showBook=true;
-  this.timer=Observable.timer(6000);
+  this.timer=Observable.timer(4000);
   this.sub=this.timer.subscribe(()=>{
     this.showBook=false;
     

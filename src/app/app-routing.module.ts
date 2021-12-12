@@ -7,7 +7,7 @@ import { RegistrationComponent } from './view/shared/registration/registration.c
 
 const appRoute:Route[]=[
     {path:'',component:HomeComponent},
-    {path:'cbse',component:CbseMendateComponent},
+    {path:'Mandatory-Public-Disclosure',component:CbseMendateComponent},
     {path:'about',loadChildren:'./modules/about.module#AboutModule'},
     {path:'facility',loadChildren:'./modules/facility.module#FacilityModule'},
     {path:'academic',loadChildren:'./modules/academic.module#AcademicModule'},
