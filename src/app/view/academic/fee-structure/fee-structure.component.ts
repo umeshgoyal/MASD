@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fee-structure.component.scss']
 })
 export class FeeStructureComponent implements OnInit {
-  pdfSrc='/assets/pdf/fee_structure.pdf';
+  pdfSrc='/assets/pdf/fee_structure22.pdf';
   isLoading=true;
   constructor() { }
 
