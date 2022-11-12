@@ -6,6 +6,7 @@ import { SummerComponent } from '../view/student-corner/summer/summer.component'
 import { WinterComponent } from '../view/student-corner/winter/winter.component';
 import { MealChartComponent } from '../view/student-corner/meal-chart/meal-chart.component';
 import { DateSheetComponent } from '../view/student-corner/date-sheet/date-sheet.component';
+import { SlcComponent } from '../view/student-corner/slc/slc.component';
 
 const routes:Routes=[
     {path:'',component:StudentCornerComponent,children:[
@@ -13,7 +14,8 @@ const routes:Routes=[
         {path:'summer',component:SummerComponent},
         {path:'winter',component:WinterComponent},
         {path:'meal-chart',component:MealChartComponent},
-        {path:'date-sheet',component:DateSheetComponent}
+        {path:'date-sheet',component:DateSheetComponent},
+        {path:'slc',component:SlcComponent}
     ]}
 ];
 @NgModule({

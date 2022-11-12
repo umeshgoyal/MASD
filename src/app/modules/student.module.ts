@@ -8,6 +8,8 @@ import { DateSheetComponent } from '../view/student-corner/date-sheet/date-sheet
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { StudentRoutingModule } from './student-routing.module';
+import { SlcComponent } from '../view/student-corner/slc/slc.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations:[
@@ -16,12 +18,14 @@ import { StudentRoutingModule } from './student-routing.module';
         SummerComponent,
         WinterComponent,
         MealChartComponent,
-        DateSheetComponent
+        DateSheetComponent,
+        SlcComponent
     ],
     imports:[
         RouterModule,
         CommonModule,
-        StudentRoutingModule
+        StudentRoutingModule,
+        FormsModule
     ]
 })
 export class StudentModule{}

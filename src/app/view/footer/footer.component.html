@@ -44,8 +44,8 @@
                 <a class="lead" routerLink="/registration"><i class="fas fa-chevron-right m-2"></i>Online Enquiry</a>
                 <br>
                 <a class="lead"><i class="fas fa-chevron-right m-2"></i>Teachers Details</a> <br>
-                <a class="lead"><i class="fas fa-chevron-right m-2"></i>Check SLC</a><br>
-                <a class="lead"><i class="fas fa-chevron-right m-2"></i>Apply For Jobs</a>
+                <a class="lead" routerLink="/student/slc"><i class="fas fa-chevron-right m-2"></i>Check SLC</a><br>
+                <a class="lead" href="https://data.odpay.in/odforms/form/MASDEmployeeRecruitment/formperma/25NbIupryH-EZpOsjzF4_fLD5fp42vX-fdyvgejYP0s" target="_blank"><i class="fas fa-chevron-right m-2"></i>Apply For Jobs</a>
 
 
             </div>
@@ -55,7 +55,7 @@
                 <a class="lead" (click)="toSyllabus()"><i class="fas fa-chevron-right m-2" ></i>Syllabus</a> <br>
                 <a class="lead" href="https://drive.google.com/file/d/1_nSgaYdYc-BV8KqajTPiOzme9QInAvbo/view?usp=sharing" download target="_blank"><i class="fas fa-chevron-right m-2"></i>Book List</a><br>
                 
-                <a class="lead d-none d-md-block"><i class="fas fa-chevron-right m-2"></i>Circulars</a>
+                <a class="lead d-none d-md-block" [routerLink]="'/'" [fragment]="'news-calender'"><i class="fas fa-chevron-right m-2"></i>Circulars</a>
                 <a class="lead d-none d-md-block" (click)="toHomework()"><i class="fas fa-chevron-right m-2" ></i>Holidays HomeWork</a>
                 <a class="lead" href="https://drive.google.com/file/d/153zVMhytDTAIn0btdaSV0XAvQOa7fdWn/view?usp=sharing" target="_blank"><i class="fas fa-chevron-right m-2"></i>EventCalender</a>
                 <!-- <a class="lead d-none d-md-block"><i class="fas fa-chevron-right m-2"></i></a> -->

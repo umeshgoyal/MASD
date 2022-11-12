@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LinkModule } from './modules/link.module';
 import { MarqueeDirectiveDirective } from './directive/marquee-directive.directive';
 import { RegistrationComponent } from './view/shared/registration/registration.component';
+import { SlcComponent } from './view/student-corner/slc/slc.component';
 
 @NgModule({
   declarations: [
