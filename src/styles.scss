@@ -10,7 +10,11 @@
 @import '~animate.css/animate.min.css';
 
 
-
+@font-face{
+    font-family: mono;
+    src: url(/assets/font/Monoton-Regular.ttf) format('truetype');
+    font-display: swap;
+  }
 /* You can add global styles to this file, and also import other style files */
 body{
     //zoom: 90% !important;

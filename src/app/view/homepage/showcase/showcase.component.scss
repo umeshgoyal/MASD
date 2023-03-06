@@ -5,20 +5,40 @@ $primary: #3292a6;
         img{
             height: 650px;
             width: 100%;
+            object-fit: cover;
+            object-position: top;
         }
-        #building{
-            margin-top: -500px;
-            margin-left: 300px;
-        }
-        #admission{
-           margin-left: 278px;
-           margin-top: 21px;
-            font-size: 24px;
-            animation-delay: 2s;
-            span{
+        .carousel-caption{
+            top: 60%;
+            z-index: 10;
+            height: fit-content;
+            font-family: mono;
+            h1{
+                font-size: 40px;
                 font-weight: bold;
+                text-transform: uppercase;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            }
+            h3{
+                font-size: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
             }
         }
+        // #building{
+        //     margin-top: -500px;
+        //     margin-left: 300px;
+        // }
+        // #admission{
+        //    margin-left: 278px;
+        //    margin-top: 21px;
+        //     font-size: 24px;
+        //     animation-delay: 2s;
+        //     span{
+        //         font-weight: bold;
+        //     }
+        // }
     }
     .carousel-control-next{
         height: fit-content;
